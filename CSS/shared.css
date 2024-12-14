@@ -1,5 +1,42 @@
-body {
-  font: optional;
+.main-header {
+  width: 95vw;
+  min-height: 10vh;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4rem;
+}
+.main-header .logo h1 {
+  color: #ffffff;
+  font-size: 3.2rem;
+  border-bottom: #17c2ec 3px solid;
+}
+.main-header .main-nav {
+  display: flex;
+  align-items: center;
+}
+.main-header .main-nav .main-nav-items {
+  display: flex;
+  list-style: none;
+}
+.main-header .main-nav .main-nav-items .main-nav-item {
+  margin-left: 2.5rem;
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.5);
+}
+.main-header .nav-cta {
+  padding: 2rem 2.6rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 2rem;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.main-header .nav-cta a {
+  text-decoration: none;
+  color: #17c2ec;
+  font-size: 2.4rem;
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=shared.css.map */

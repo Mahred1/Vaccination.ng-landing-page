@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["SCSS/boilerplate.scss"],"names":[],"mappings":"AAAQ;AACA;AAER;EACI;EACA;EACA;;;AAYH;EAEO;EACA;;;AAGP;EACG;;;AAEH;EACG,OAhBiB;EAkBb;EACA;;;AAGP;EAEO;EACA;;;AAGP;EAEO;EACA","file":"boilerplate.css"}
+{"version":3,"sourceRoot":"","sources":["SCSS/boilerplate.scss","SCSS/_colors.scss"],"names":[],"mappings":"AAAQ;AACA;AAER;EACI;EACA;EACA;;;AAEJ;EAEQ;EACA;;;AAGP;EACG;;;AAEH;EACG,OCfc;EDiBV;EACA;;;AAGP;EAEO;EACA;;;AAGP;EAEO;EACA","file":"boilerplate.css"}
