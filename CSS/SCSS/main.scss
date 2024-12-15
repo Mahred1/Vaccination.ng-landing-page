@@ -118,7 +118,8 @@
         }
         .banner{
             padding: 6rem 4rem 5rem 4rem;
-            background-color: transparentize($secondary-white, 0.45);
+            background-color: transparentize($secondary-white, 0.43);
+            box-shadow: 1px -8px 1px 1px transparentize($secondary-white, 0.46);
             border-radius: 2rem 2rem 0 0;
             display: flex;
             align-items: center;
