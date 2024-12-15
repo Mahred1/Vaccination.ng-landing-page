@@ -1,7 +1,7 @@
 @import "colors";
 // Hero section
 .hero{
-    width: 95vw;
+    width: 90vw;
     margin: auto;
     margin-top: 12rem;
     .hero-info{
@@ -51,4 +51,54 @@
             }
         }
     }
-}
+    .hero-img{
+        position: relative;
+        .main-img{
+            img{
+                border-radius: 4.3rem;
+            }
+        }
+        .doctors,.corona-img,.inspecting-img{
+            position: absolute;  
+        }
+        .corona-img{
+            top: 41%;
+            left: 88.5%;
+        }
+        .inspecting-img{
+            top: 41%;
+            left: -10.5%;
+        }
+        .doctors{
+            display: flex;
+            background-color: transparentize( $secondary-white, 0.3);
+            padding: 2rem;
+            max-width: fit-content;
+            border-radius: 2rem;
+            top: 90%;
+            left: -9%;
+        }
+            h2{
+                margin-left: 2.1rem;
+            }
+            span{
+                color: $primary-light-blue;
+            }
+            img{
+                position: relative;
+                clear: both;
+                &:nth-child(1){
+                    left: 0;
+                }
+                &:nth-child(2){
+                    left: -0.5%;
+                }
+                &:nth-child(3){
+                    left: -1%;
+                }
+            }
+            
+        }
+        
+
+    }

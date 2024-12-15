@@ -1,5 +1,5 @@
 .hero {
-  width: 95vw;
+  width: 90vw;
   margin: auto;
   margin-top: 12rem;
 }
@@ -42,6 +42,51 @@
 .hero .hero-info .hero-content .hero-btn .hero-btn__secondary {
   background-color: rgba(255, 255, 255, 0.25);
   margin-left: 2rem;
+}
+.hero .hero-img {
+  position: relative;
+}
+.hero .hero-img .main-img img {
+  border-radius: 4.3rem;
+}
+.hero .hero-img .doctors, .hero .hero-img .corona-img, .hero .hero-img .inspecting-img {
+  position: absolute;
+}
+.hero .hero-img .corona-img {
+  top: 41%;
+  left: 88.5%;
+}
+.hero .hero-img .inspecting-img {
+  top: 41%;
+  left: -10.5%;
+}
+.hero .hero-img .doctors {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 2rem;
+  max-width: fit-content;
+  border-radius: 2rem;
+  top: 90%;
+  left: -9%;
+}
+.hero .hero-img h2 {
+  margin-left: 2.1rem;
+}
+.hero .hero-img span {
+  color: #17c2ec;
+}
+.hero .hero-img img {
+  position: relative;
+  clear: both;
+}
+.hero .hero-img img:nth-child(1) {
+  left: 0;
+}
+.hero .hero-img img:nth-child(2) {
+  left: -0.5%;
+}
+.hero .hero-img img:nth-child(3) {
+  left: -1%;
 }
 
 /*# sourceMappingURL=main.css.map */
