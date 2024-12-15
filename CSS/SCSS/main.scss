@@ -147,3 +147,21 @@
         }
     }    
     }
+
+//Patners section
+
+.partners-section{
+    background-color: $secondary-white;
+    padding: 2rem 0 1rem 0;
+    .partners{
+        width: 90vw;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 4.8rem;
+        img {
+            fill:grey;
+        }
+    }
+}

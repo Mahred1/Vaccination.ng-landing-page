@@ -134,4 +134,20 @@
   color: #ffffff;
 }
 
+.partners-section {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 2rem 0 1rem 0;
+}
+.partners-section .partners {
+  width: 90vw;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4.8rem;
+}
+.partners-section .partners img {
+  fill: grey;
+}
+
 /*# sourceMappingURL=main.css.map */
