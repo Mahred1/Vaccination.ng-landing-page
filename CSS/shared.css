@@ -11,6 +11,8 @@
   align-items: center;
   justify-content: space-between;
   padding-top: 4rem;
+  position: sticky;
+  top: -1.5rem;
 }
 .main-header .logo h1 {
   color: #ffffff;

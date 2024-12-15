@@ -88,5 +88,50 @@
 .hero .hero-img img:nth-child(3) {
   left: -1%;
 }
+.hero .banner-icon {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 5rem;
+  height: 5rem;
+}
+.hero .hero-banner {
+  width: 90vw;
+  margin: auto;
+}
+.hero .hero-banner .banner-title {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.hero .hero-banner .banner {
+  padding: 6rem 4rem 5rem 4rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 2rem 2rem 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero .hero-banner .banner .banner-items {
+  display: flex;
+  gap: 5rem;
+}
+.hero .hero-banner .banner .banner-items .location,
+.hero .hero-banner .banner .banner-items .date,
+.hero .hero-banner .banner .banner-items .vaccine {
+  display: flex;
+  gap: 2rem;
+}
+.hero .hero-banner .banner .submit-banner {
+  background-color: #17c2ec;
+  display: inline-flex;
+  padding: 2rem 2.5rem;
+  border-radius: 2rem;
+}
+.hero .hero-banner .banner .submit-banner a {
+  text-decoration: none;
+  color: #ffffff;
+}
 
 /*# sourceMappingURL=main.css.map */

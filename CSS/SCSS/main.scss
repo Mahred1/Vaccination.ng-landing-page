@@ -99,6 +99,51 @@
             }
             
         }
-        
+    .banner-icon{
+        background-color: transparentize($secondary-white, 0.4);
+        padding: 1rem;
+        border-radius: 1rem;
+        width: 5rem;
+        height: 5rem;
 
+    }  
+    .hero-banner{
+        width: 90vw;
+        margin: auto;
+        .banner-title{
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        .banner{
+            padding: 6rem 4rem 5rem 4rem;
+            background-color: transparentize($secondary-white, 0.45);
+            border-radius: 2rem 2rem 0 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .banner-items{
+                display: flex;
+                gap: 5rem;
+                .location,
+                .date,
+                .vaccine{
+                    display: flex;
+                    gap: 2rem;
+                }
+                
+            }
+            .submit-banner{
+                background-color: $primary-light-blue;
+                display: inline-flex;
+                padding: 2rem 2.5rem;
+                border-radius: 2rem;
+               a{
+                text-decoration: none;
+                color: $primary-white;
+               }
+            }
+        }
+    }    
     }
