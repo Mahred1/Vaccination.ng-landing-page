@@ -1,5 +1,10 @@
 @import "colors";
+// Front section
 
+.front{
+    min-height: 100vh;
+    background:rgba(0, 0, 0, 1) url(../../Assets/img/front.jpg) no-repeat center/cover ;
+}
 // header section
 .main-header{
     width: 95vw;
@@ -8,8 +13,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: $primary-dark-blue;
-    margin-top: 4rem;
+    padding-top: 4rem;
    
     .logo{
         h1{
