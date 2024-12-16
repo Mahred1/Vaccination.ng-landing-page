@@ -228,4 +228,91 @@
   margin-left: 1rem;
 }
 
+.vaccine-reasons {
+  background: url(../../Assets/img/reasons/reasons-bg.jpg) no-repeat;
+  padding: 6.7rem 0 8rem 0;
+}
+.vaccine-reasons .vaccine-reason__content {
+  width: 90%;
+  margin: auto;
+}
+.vaccine-reasons .vaccine-reason__content .vaccine-reasons__heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+.vaccine-reasons .vaccine-reason__content .vaccine-reasons__heading h1 {
+  max-width: 50rem;
+}
+.vaccine-reasons .vaccine-reason__content .vaccine-reasons__heading p {
+  max-width: 53.6rem;
+}
+.vaccine-reasons .vaccine-reason__content .vaccine-cards {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+}
+.vaccine-reasons .vaccine-reason__content .vaccine-cards .reasons-read__more {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.vaccine-reasons .vaccine-reason__content .vaccine-cards .reasons-read__more a {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.vaccine-reasons .vaccine-reason__content .vaccine-cards .reasons-read__more img {
+  width: 3rem;
+  height: 3rem;
+}
+.vaccine-reasons .vaccine-reason__content .vaccine-cards .card-1 {
+  background-color: rgba(196, 196, 196, 0.2);
+  border-radius: 5rem 15rem 5rem 5rem;
+  max-width: 45rem;
+  padding: 4rem 5.5rem 7.8rem 4rem;
+}
+.vaccine-reasons .vaccine-reason__content .vaccine-cards .card-1 .card-ico {
+  padding: 1.4rem;
+  border-radius: 3rem;
+  background-color: rgba(196, 196, 196, 0.1);
+  margin-bottom: 4rem;
+}
+.vaccine-reasons .vaccine-reason__content .vaccine-cards .card-1 h2 {
+  color: #17c2ec;
+  margin-bottom: 3rem;
+}
+.vaccine-reasons .vaccine-reason__content .vaccine-cards .card-1 p {
+  color: #ffffff;
+  font-size: 1.8rem;
+  margin-bottom: 4.3rem;
+}
+.vaccine-reasons .vaccine-reason__content .vaccine-cards .card-1 a {
+  color: #17c2ec;
+}
+.vaccine-reasons .vaccine-reason__content .vaccine-cards .card-2,
+.vaccine-reasons .vaccine-reason__content .vaccine-cards .card-3 {
+  width: 35rem;
+  height: 35rem;
+  border: 0.3rem solid rgba(255, 255, 255, 0.5);
+  border-radius: 5rem;
+  padding: 4rem 5.2rem 6.3rem 4rem;
+}
+.vaccine-reasons .vaccine-reason__content .vaccine-cards .card-2 .card-ico,
+.vaccine-reasons .vaccine-reason__content .vaccine-cards .card-3 .card-ico {
+  background-color: rgba(196, 196, 196, 0.1);
+  border-radius: 2.1rem;
+  padding: 0.9rem;
+  margin-bottom: 4rem;
+}
+.vaccine-reasons .vaccine-reason__content .vaccine-cards .card-2 h2,
+.vaccine-reasons .vaccine-reason__content .vaccine-cards .card-3 h2 {
+  margin-bottom: 5.6rem;
+}
+.vaccine-reasons .vaccine-reason__content .vaccine-cards .card-3 h2 {
+  margin-bottom: 8.6rem;
+}
+
 /*# sourceMappingURL=main.css.map */
