@@ -40,7 +40,7 @@
   background-color: #17c2ec;
 }
 .hero .hero-info .hero-content .hero-btn .hero-btn__secondary {
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: rgba(196, 196, 196, 0.1);
   margin-left: 2rem;
 }
 .hero .hero-img {
@@ -62,7 +62,7 @@
 }
 .hero .hero-img .doctors {
   display: flex;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(196, 196, 196, 0.2);
   padding: 2rem;
   max-width: fit-content;
   border-radius: 2rem;
@@ -89,7 +89,7 @@
   left: -1%;
 }
 .hero .banner-icon {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(196, 196, 196, 0.1);
   padding: 1rem;
   border-radius: 1rem;
   width: 5rem;
@@ -107,8 +107,8 @@
 }
 .hero .hero-banner .banner {
   padding: 6rem 4rem 5rem 4rem;
-  background-color: rgba(255, 255, 255, 0.07);
-  box-shadow: 1px -8px 1px 1px rgba(255, 255, 255, 0.04);
+  background-color: rgba(196, 196, 196, 0.1);
+  box-shadow: 1px -8px 1px 1px rgba(196, 196, 196, 0.05);
   border-radius: 2rem 2rem 0 0;
   display: flex;
   align-items: center;
