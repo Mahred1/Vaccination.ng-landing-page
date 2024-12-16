@@ -150,7 +150,6 @@
     }
 
 //Patners section
-
 .partners-section{
     background-color: $secondary-white;
     padding: 2rem 0 1rem 0;
@@ -163,6 +162,85 @@
         gap: 4.8rem;
         img {
             fill:grey;
+        }
+    }
+}
+
+//Check-covid section
+.check-corona{
+    background:url(../../Assets/img/checkcovid/check-bg.jpg) ;
+    padding: 6.3rem 0;
+    .check-covid{
+        width: 90vw;
+        margin: auto;
+        background-color: rgba(196, 196, 196, 0.10);
+        border-radius: 2rem;
+        padding-bottom: 3rem;
+        .check-title{
+            background-color: rgba(196, 196, 196, 0.05);
+            padding: 3.6rem 0;
+            border-radius: 2rem 2rem 0 0;
+            h2{
+                width: 90%;
+                margin: auto;
+
+            }
+        }
+        .check-patient{
+            width: 90%;
+            margin: auto;
+            padding: 3.5rem 0;
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            input{
+                padding: 2rem 2.5rem;
+                border-radius: 2rem;
+                font-size: 24px;
+                font-weight: 500;
+                color: $primary-white;
+                min-width: 45rem;
+                background-color: transparent;
+                box-shadow: none;
+                border: 0.3rem solid rgba(196, 196, 196, 0.15);
+                &:focus-visible{
+                outline: 0.3rem solid $primary-light-blue;
+                border: none;
+                }
+                &::placeholder{
+                    color: $secondary-white;
+                    font-size: 2.4rem;
+                    font-weight: 500;
+                }
+            }
+            a{
+                text-decoration: none;
+                padding: 2rem 4.6rem;
+                color: $primary-light-blue;
+                font-size: 2.4rem;
+                font-weight: 700;
+                background-color: rgba(196, 196, 196, 0.10);
+                border: 0.3rem solid $primary-light-blue;
+                border-radius: 2rem;
+            }
+        }
+        .covid-cert{
+            width: 90%;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(196, 196, 196, 0.05);
+            border-radius: 2rem;
+            padding: 2rem 0;
+            box-shadow: 0px 8px 13px 0px rgba(10, 0, 0, 0.05);
+            h2{
+                color: $primary-light-blue;
+                a{
+                    color: inherit;
+                    margin-left: 1rem;
+                }
+            }
         }
     }
 }

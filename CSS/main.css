@@ -151,4 +151,81 @@
   fill: grey;
 }
 
+.check-corona {
+  background: url(../../Assets/img/checkcovid/check-bg.jpg);
+  padding: 6.3rem 0;
+}
+.check-corona .check-covid {
+  width: 90vw;
+  margin: auto;
+  background-color: rgba(196, 196, 196, 0.1);
+  border-radius: 2rem;
+  padding-bottom: 3rem;
+}
+.check-corona .check-covid .check-title {
+  background-color: rgba(196, 196, 196, 0.05);
+  padding: 3.6rem 0;
+  border-radius: 2rem 2rem 0 0;
+}
+.check-corona .check-covid .check-title h2 {
+  width: 90%;
+  margin: auto;
+}
+.check-corona .check-covid .check-patient {
+  width: 90%;
+  margin: auto;
+  padding: 3.5rem 0;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.check-corona .check-covid .check-patient input {
+  padding: 2rem 2.5rem;
+  border-radius: 2rem;
+  font-size: 24px;
+  font-weight: 500;
+  color: #ffffff;
+  min-width: 45rem;
+  background-color: transparent;
+  box-shadow: none;
+  border: 0.3rem solid rgba(196, 196, 196, 0.15);
+}
+.check-corona .check-covid .check-patient input:focus-visible {
+  outline: 0.3rem solid #17c2ec;
+  border: none;
+}
+.check-corona .check-covid .check-patient input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+.check-corona .check-covid .check-patient a {
+  text-decoration: none;
+  padding: 2rem 4.6rem;
+  color: #17c2ec;
+  font-size: 2.4rem;
+  font-weight: 700;
+  background-color: rgba(196, 196, 196, 0.1);
+  border: 0.3rem solid #17c2ec;
+  border-radius: 2rem;
+}
+.check-corona .check-covid .covid-cert {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(196, 196, 196, 0.05);
+  border-radius: 2rem;
+  padding: 2rem 0;
+  box-shadow: 0px 8px 13px 0px rgba(10, 0, 0, 0.05);
+}
+.check-corona .check-covid .covid-cert h2 {
+  color: #17c2ec;
+}
+.check-corona .check-covid .covid-cert h2 a {
+  color: inherit;
+  margin-left: 1rem;
+}
+
 /*# sourceMappingURL=main.css.map */
