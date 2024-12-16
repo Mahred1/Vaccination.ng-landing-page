@@ -315,4 +315,132 @@
   margin-bottom: 8.6rem;
 }
 
+.registration {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  color: #212529;
+}
+.registration .registration-content {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.registration .registration-content .registration-details h1 {
+  width: 47rem;
+  margin-bottom: 4rem;
+}
+.registration .registration-content .registration-details h2 {
+  margin-bottom: 2rem;
+}
+.registration .registration-content .registration-details p {
+  color: rgba(33, 37, 41, 0.5);
+  font-size: 2rem;
+  width: 65.4rem;
+  margin-bottom: 2rem;
+}
+.registration .registration-content .registration-details input {
+  border: none;
+  background-color: rgba(11, 21, 60, 0.15);
+  border-radius: 2rem;
+  padding: 2rem 3rem;
+  margin-bottom: 4rem;
+}
+.registration .registration-content .registration-details input::placeholder {
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: rgba(33, 37, 41, 0.25);
+}
+.registration .registration-content .registration-details .full-name {
+  width: 65rem;
+}
+.registration .registration-content .registration-details .phone-field {
+  display: flex;
+  gap: 3.6rem;
+  align-items: center;
+  width: 40rem;
+  margin-bottom: 4rem;
+}
+.registration .registration-content .registration-details .phone-field .phone-number {
+  display: flex;
+  align-items: center;
+}
+.registration .registration-content .registration-details .phone-field .phone-number label {
+  border: none;
+  background-color: rgba(11, 21, 60, 0.15);
+  border-radius: 2rem;
+  padding: 0.65rem 2rem;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.registration .registration-content .registration-details .phone-field .phone-number input {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  width: 29rem;
+  margin-bottom: 0;
+}
+.registration .registration-content .registration-details .phone-field a {
+  padding: 2rem 7rem;
+  background-color: #17c2ec;
+  border-radius: 2rem;
+  color: #ffffff;
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+.registration .registration-content .registration-details .submit-reg {
+  text-decoration: none;
+  font-size: 2.4rem;
+  font-weight: 700;
+  background-color: #17c2ec;
+  padding: 2rem 27.9rem;
+  border-radius: 2rem;
+  color: #ffffff;
+}
+.registration .registration-content .registration-details .reg-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4.6rem;
+  font-size: 2rem;
+  margin-top: 5rem;
+}
+.registration .registration-content .registration-details .reg-footer span {
+  color: rgba(33, 37, 41, 0.5);
+  font-size: 2rem;
+  font-weight: 600;
+}
+.registration .registration-content .registration-details .reg-footer a {
+  color: #17c2ec;
+  font-size: 2rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+.registration .registration-content .registration-img {
+  background-color: #0B153C;
+  position: relative;
+  width: 37.7rem;
+  height: 55.3rem;
+  border-radius: 2rem;
+}
+.registration .registration-content .registration-img .syringe {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.registration .registration-content .registration-img .corona-reg {
+  position: absolute;
+  top: -1.5rem;
+  left: -2rem;
+}
+.registration .registration-content .registration-img h2 {
+  position: absolute;
+  color: #ffffff;
+  width: 11.6rem;
+  top: 4.5rem;
+  left: 14rem;
+  text-align: center;
+}
+
 /*# sourceMappingURL=main.css.map */

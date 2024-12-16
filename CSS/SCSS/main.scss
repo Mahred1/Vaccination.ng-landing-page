@@ -334,3 +334,140 @@
         }
     }
 }
+
+// Registration section 
+
+.registration{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    color: $primary-black ;
+    .registration-content{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .registration-details{
+            h1{
+                width: 47rem;
+                margin-bottom: 4rem;
+            }
+            h2{
+                margin-bottom: 2rem;
+            }
+            p{
+                color: transparentize($primary-black, 0.50);
+                font-size: 2rem;
+                width: 65.4rem;
+                margin-bottom: 2rem;
+            }
+            input{
+                border: none;
+                background-color:rgba(11, 21, 60, 0.15);
+                border-radius: 2rem;
+                padding: 2rem 3rem;
+                margin-bottom: 4rem;
+                &::placeholder{
+                    font-size: 2.4rem;
+                    font-weight: 500;
+                    color: transparentize($primary-black, 0.75);
+                }
+            }
+            .full-name{
+                width: 65rem;
+
+            }
+            .phone-field{
+                display: flex;
+                gap: 3.6rem;
+                align-items: center;
+                width: 40rem;
+                margin-bottom: 4rem;
+                .phone-number{
+                    display: flex;
+                    align-items: center;
+                    label{
+                        border: none;
+                        background-color:rgba(11, 21, 60, 0.15);
+                        border-radius: 2rem;
+                        padding: 0.65rem 2rem;
+                        border-top-right-radius: 0;
+                        border-bottom-right-radius: 0;
+                    }
+                    input{
+                        border-top-left-radius: 0;
+                        border-bottom-left-radius: 0;
+                        width: 29rem;
+                        margin-bottom: 0;
+                    }
+                }
+                a{
+                    padding: 2rem 7rem;
+                    background-color: $primary-light-blue;
+                    border-radius: 2rem;
+                    color: $primary-white;
+                    font: {
+                        size:2.4rem;
+                        weight:700;
+                    }
+                    text-decoration: none;
+                    
+                }
+            }
+            .submit-reg{
+                text-decoration: none;
+                font-size: 2.4rem;
+                font-weight: 700;
+                background-color: $primary-light-blue;
+                padding: 2rem 27.9rem;
+                border-radius: 2rem;
+                color: $primary-white;
+                
+            }
+            .reg-footer{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 4.6rem;
+                font-size: 2rem;
+                margin-top:5rem;
+                span{
+                    color: transparentize($primary-black, 0.50);
+                    font-size: 2rem;
+                    font-weight: 600;
+                }
+                a{
+                    color:$primary-light-blue;
+                    font-size: 2rem;
+                    font-weight: 700;
+                    text-decoration: none;
+                }
+            }
+        }
+        .registration-img{
+            background-color:#0B153C;
+            position: relative;
+            width: 37.7rem;
+            height: 55.3rem;
+            border-radius: 2rem;
+            .syringe{
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+            .corona-reg{
+                position: absolute;
+                top: -1.5rem;
+                left: -2rem;
+            }
+            h2{
+                position: absolute;
+                color: $primary-white;
+                width: 11.6rem;
+                top: 4.5rem;
+                left: 14rem;
+                text-align: center;
+            }
+        }
+    }
+}
