@@ -172,7 +172,7 @@
   margin: auto;
 }
 .check-corona .check-covid .check-patient {
-  width: 90%;
+  width: 90vw;
   margin: auto;
   padding: 3.5rem 0;
   display: flex;
@@ -210,7 +210,7 @@
   border-radius: 2rem;
 }
 .check-corona .check-covid .covid-cert {
-  width: 90%;
+  width: 90vw;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -233,7 +233,7 @@
   padding: 6.7rem 0 8rem 0;
 }
 .vaccine-reasons .vaccine-reason__content {
-  width: 90%;
+  width: 90vw;
   margin: auto;
 }
 .vaccine-reasons .vaccine-reason__content .vaccine-reasons__heading {
@@ -321,7 +321,7 @@
   color: #212529;
 }
 .registration .registration-content {
-  width: 90%;
+  width: 90vw;
   margin: auto;
   display: flex;
   align-items: center;
@@ -539,6 +539,82 @@
 .symptoms .symptoms-content .symptoms-img .symptom-6 {
   top: 38rem;
   right: -42rem;
+}
+
+.feedback-section {
+  background: url(../../Assets/img/feedback/feedback-bg.jpg) no-repeat center/cover;
+}
+.feedback-section .feedback-content {
+  width: 90vw;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.feedback-section .feedback-content h2 {
+  margin: 5.7rem 0 2rem 0;
+  color: #17c2ec;
+}
+.feedback-section .feedback-content h1 {
+  color: #212529;
+  margin-bottom: 4rem;
+}
+.feedback-section .feedback-content p {
+  color: rgba(33, 37, 41, 0.5);
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+  max-width: 95.3rem;
+}
+.feedback-section .feedback-content .customer-feedback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4.5rem;
+  margin-bottom: 32.1rem;
+  margin-top: 10rem;
+}
+.feedback-section .feedback-content .customer-feedback .profile {
+  display: flex;
+  align-items: end;
+  justify-content: left;
+  gap: 2rem;
+}
+.feedback-section .feedback-content .customer-feedback .profile img {
+  width: 7rem;
+  height: 7rem;
+}
+.feedback-section .feedback-content .customer-feedback .profile .customer-info h2 {
+  margin: 0;
+  color: #212529;
+}
+.feedback-section .feedback-content .customer-feedback .profile .customer-info p {
+  text-align: left;
+}
+.feedback-section .feedback-content .customer-feedback .customer {
+  background-color: rgba(196, 196, 196, 0.5);
+  padding: 3rem 3.3rem 4.4rem 3rem;
+  border-radius: 2rem;
+}
+.feedback-section .feedback-content .customer-feedback .customer .customer-testimonial {
+  max-width: 37.3rem;
+  margin-top: 4rem;
+  text-align: center;
+  font-size: 1.8rem;
+}
+.feedback-section .feedback-content .customer-feedback .customer .customer-testimonial span {
+  color: #17c2ec;
+}
+.feedback-section .feedback-content .customer-feedback .pick-customer {
+  background-color: #17c2ec;
+  box-shadow: 0px 4px 3px 2px rgba(33, 37, 41, 0.25);
+}
+.feedback-section .feedback-content .customer-feedback .pick-customer p {
+  color: #ffffff;
+}
+.feedback-section .feedback-content .customer-feedback .pick-customer .customer-info h2 {
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=main.css.map */
