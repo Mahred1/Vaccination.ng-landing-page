@@ -342,18 +342,25 @@
 }
 .registration .registration-content .registration-details input {
   border: none;
-  background-color: rgba(11, 21, 60, 0.15);
-  border-radius: 2rem;
-  padding: 2rem 3rem;
-  margin-bottom: 4rem;
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: rgba(33, 37, 41, 0.55);
 }
 .registration .registration-content .registration-details input::placeholder {
   font-size: 2.4rem;
   font-weight: 500;
   color: rgba(33, 37, 41, 0.25);
 }
+.registration .registration-content .registration-details input:focus-visible {
+  outline: none;
+}
 .registration .registration-content .registration-details .full-name {
   width: 65rem;
+  height: 7rem;
+  background-color: rgba(11, 21, 60, 0.15);
+  border-radius: 2rem;
+  padding: 2rem 3rem;
+  margin-bottom: 4rem;
 }
 .registration .registration-content .registration-details .phone-field {
   display: flex;
@@ -365,20 +372,20 @@
 .registration .registration-content .registration-details .phone-field .phone-number {
   display: flex;
   align-items: center;
-}
-.registration .registration-content .registration-details .phone-field .phone-number label {
-  border: none;
   background-color: rgba(11, 21, 60, 0.15);
   border-radius: 2rem;
-  padding: 0.65rem 2rem;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
+  min-width: 40rem;
+  padding: 1.5rem 3rem;
+}
+.registration .registration-content .registration-details .phone-field .phone-number .flag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
 .registration .registration-content .registration-details .phone-field .phone-number input {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  width: 29rem;
-  margin-bottom: 0;
+  margin-left: 2rem;
+  background-color: transparent;
 }
 .registration .registration-content .registration-details .phone-field a {
   padding: 2rem 7rem;
