@@ -478,3 +478,99 @@
         }
     }
 }
+
+//Symptoms section
+.symptoms{
+    background: url(../../Assets/img/symptoms/symptoms-bg.jpg) no-repeat center/cover;
+    padding-top: 6.7rem;
+    .symptoms-content{
+        width: 90vw;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center;
+        h2{
+            margin-bottom: 2rem;
+        }
+        h1{
+            span{
+                color: $primary-light-blue;
+            }
+            margin-bottom: 4rem;
+        }
+        p{
+            width: 86rem;
+             text-align: center;
+        }
+        .symptoms-img{
+            margin-top:  18rem;
+            position: relative;
+            .sick{
+                position: relative;
+            }
+
+            .symptom{
+                position: absolute;
+                display: flex;
+                align-items: center;
+
+                h2{
+                    font-size: 2rem;
+                    color: $primary-light-blue;
+                    font-weight: 600;
+                    background-color: opacify($secondary-black, 0.10);
+                    padding: 2.3rem 0;
+                    width: 30rem;
+                    border-radius: 1rem;
+                    position: relative;
+                    left: -8rem;
+                    display: inline-flex;
+                    justify-content: space-evenly ;
+                    margin: 0;
+                }
+                img{
+                    position: relative;
+                    width:10rem;
+                    height: 10rem;
+                    z-index: 2;
+                }
+    
+            }
+            .symptom-1{
+                top: 3rem;
+                left: -14rem;
+            }
+            .symptom-2{
+                top: 21rem;
+                left: -28rem;
+                h2{
+                    padding-left: 6rem;
+                }
+            }
+            .symptom-3{
+                top: 38rem;
+                left: -36rem;
+            }
+            .symptom-4{
+                top: 3rem;
+                right: -24rem ;
+                h2{
+                    padding-left: 6.5rem;
+                }
+            }
+            .symptom-5{
+                top: 21rem;
+                right: -34rem;
+                h2{
+                    padding-left: 6rem;
+                }
+            }
+            .symptom-6{
+                top: 38rem;
+                right: -42rem;
+            }
+        }
+    }
+}
+
