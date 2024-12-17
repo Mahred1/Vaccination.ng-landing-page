@@ -229,7 +229,7 @@
 }
 
 .vaccine-reasons {
-  background: url(../../Assets/img/reasons/reasons-bg.jpg) no-repeat;
+  background: url(../../Assets/img/reasons/reasons-bg.jpg) no-repeat center/cover;
   padding: 6.7rem 0 8rem 0;
 }
 .vaccine-reasons .vaccine-reason__content {

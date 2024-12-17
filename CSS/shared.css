@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 .front {
   min-height: 100vh;
   background: rgb(0, 0, 0) url(../../Assets/img/front.jpg) no-repeat center/cover;

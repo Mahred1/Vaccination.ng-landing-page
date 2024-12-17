@@ -1,9 +1,11 @@
 @import "colors";
 // Front section
-
+body{
+    overflow-x: hidden;
+}
 .front{
     min-height: 100vh;
-    background:rgba(0, 0, 0, 1) url(../../Assets/img/front.jpg) no-repeat center/cover ;
+    background:rgba(0, 0, 0, 1) url('../../Assets/img/front.jpg') no-repeat center/cover ;
 }
 // header section
 .main-header{
