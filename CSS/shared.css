@@ -125,12 +125,13 @@ body {
   color: rgba(255, 255, 255, 0.5);
   text-decoration: none;
 }
-.main-footer .footer-content .footer-nav .footer-nav-items .active {
+.main-footer .footer-content .footer-nav .footer-nav-items .footer-nav-item .active {
   font-weight: 700;
   color: #ffffff;
 }
 .main-footer .quote {
   position: absolute;
+  z-index: 5;
   top: -40%;
   left: 14%;
   width: 103.1rem;
@@ -144,6 +145,7 @@ body {
 .main-footer .quote::before {
   content: "";
   position: absolute;
+  z-index: -1;
   width: 106.7rem;
   height: 43.5rem;
   border-radius: 5rem;
@@ -169,10 +171,11 @@ body {
 .main-footer .quote .quote-content .quote-email input {
   border: none;
   background-color: #ffffff;
-  padding: 2.9rem 4rem;
+  padding: 2.5rem 4rem;
   width: 45rem;
   border-radius: 3rem 0 0 3rem;
   box-shadow: 0px 4px 4px 0px rgba(33, 37, 41, 0.1);
+  font-size: 2rem;
 }
 .main-footer .quote .quote-content .quote-email input:focus-visible {
   outline: none;

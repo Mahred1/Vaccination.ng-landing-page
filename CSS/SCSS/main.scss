@@ -33,7 +33,6 @@
                 a{
                     color: $primary-white;
                     font-weight: 700;
-                    font-size: 2.4rem;  
                     text-decoration: none;
                     padding: 2rem 2.5rem;
                     border-radius: 2rem;
@@ -192,6 +191,7 @@
             padding: 3.5rem 0;
             display: flex;
             align-items: center;
+            justify-content: center;
             gap: 2rem;
             input{
                 padding: 2rem 2.5rem;
@@ -217,7 +217,6 @@
                 text-decoration: none;
                 padding: 2rem 4.6rem;
                 color: $primary-light-blue;
-                font-size: 2.4rem;
                 font-weight: 700;
                 background-color: $secondary-black;
                 border: 0.3rem solid $primary-light-blue;
@@ -225,7 +224,7 @@
             }
         }
         .covid-cert{
-            width: 90vw;
+            width: 85%;
             margin: auto;
             display: flex;
             justify-content: center;
@@ -413,10 +412,7 @@
                     background-color: $primary-light-blue;
                     border-radius: 2rem;
                     color: $primary-white;
-                    font: {
-                        size:2.4rem;
-                        weight:700;
-                    }
+                    font-weight:700;
                     text-decoration: none;
                     
                 }

@@ -32,4 +32,23 @@ h2 {
   font-weight: 700;
 }
 
+a {
+  font-size: 2.4rem;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 3.6rem;
+  }
+  .logo h1 {
+    font-size: 2.5rem;
+  }
+  p {
+    font-size: 2rem;
+  }
+  a {
+    font-size: 2rem;
+  }
+}
+
 /*# sourceMappingURL=boilerplate.css.map */
