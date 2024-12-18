@@ -82,6 +82,7 @@ body {
 .main-footer {
   background: url(../../Assets/img/footer/footer-bg.jpg) no-repeat center/cover;
   padding: 32.8rem 0 12.8rem 0;
+  position: relative;
 }
 .main-footer .footer-content {
   width: 90vw;
@@ -124,6 +125,64 @@ body {
 .main-footer .footer-content .footer-nav .footer-nav-items .active {
   font-weight: 700;
   color: #ffffff;
+}
+.main-footer .quote {
+  position: absolute;
+  top: -40%;
+  left: 24%;
+  width: 103.1rem;
+  height: 40rem;
+  background-color: #17c2ec;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5rem;
+}
+.main-footer .quote::before {
+  content: "";
+  position: absolute;
+  width: 106.7rem;
+  height: 43.5rem;
+  border-radius: 5rem;
+  background-color: rgba(196, 196, 196, 0.15);
+}
+.main-footer .quote .quote-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.main-footer .quote .quote-content h1 {
+  margin-bottom: 2rem;
+}
+.main-footer .quote .quote-content p {
+  color: #ffffff;
+  margin-bottom: 4rem;
+}
+.main-footer .quote .quote-content .quote-email {
+  display: flex;
+  align-items: center;
+}
+.main-footer .quote .quote-content .quote-email input {
+  border: none;
+  background-color: #ffffff;
+  padding: 2.9rem 4rem;
+  width: 45rem;
+  border-radius: 3rem 0 0 3rem;
+  box-shadow: 0px 4px 4px 0px rgba(33, 37, 41, 0.1);
+}
+.main-footer .quote .quote-content .quote-email input:focus-visible {
+  outline: none;
+}
+.main-footer .quote .quote-content .quote-email input::placeholder {
+  color: rgba(33, 37, 41, 0.25);
+  font-size: 2rem;
+  font-weight: 500;
+}
+.main-footer .quote .quote-content .quote-email img {
+  background-color: #0B153C;
+  border-radius: 0 3rem 3rem 0;
+  padding: 1.7rem 3rem 1.7rem 3rem;
 }
 
 /*# sourceMappingURL=shared.css.map */
