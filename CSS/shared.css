@@ -79,4 +79,51 @@ body {
   font-weight: 700;
 }
 
+.main-footer {
+  background: url(../../Assets/img/footer/footer-bg.jpg) no-repeat center/cover;
+  padding: 32.8rem 0 12.8rem 0;
+}
+.main-footer .footer-content {
+  width: 90vw;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main-footer .footer-content .logo h1 {
+  color: #ffffff;
+  font-size: 3.2rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+.main-footer .footer-content .logo h1:before {
+  content: "";
+  position: absolute;
+  background-color: #17c2ec;
+  width: 10rem;
+  height: 1px;
+  top: 98%;
+  left: 0%;
+  border-bottom: #17c2ec 2px solid;
+  border-radius: 5px;
+}
+.main-footer .footer-content .footer-nav {
+  display: flex;
+  align-items: center;
+}
+.main-footer .footer-content .footer-nav .footer-nav-items {
+  display: flex;
+  list-style: none;
+}
+.main-footer .footer-content .footer-nav .footer-nav-items .footer-nav-item {
+  margin-left: 2.5rem;
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.5);
+}
+.main-footer .footer-content .footer-nav .footer-nav-items .active {
+  font-weight: 700;
+  color: #ffffff;
+}
+
 /*# sourceMappingURL=shared.css.map */

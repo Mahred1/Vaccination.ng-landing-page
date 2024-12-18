@@ -89,3 +89,57 @@ body{
     }
 }
 
+// footer section
+.main-footer{
+    background: url(../../Assets/img/footer/footer-bg.jpg) no-repeat center/cover;
+    padding: 32.8rem 0 12.8rem 0;
+    .footer-content{
+        width: 90vw;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .logo{
+            h1{
+                color: $primary-white;
+                font-size: 3.2rem;
+                margin-bottom: 1rem;
+                position: relative;
+                &:before{
+                    content: '';
+                    position: absolute;
+                    background-color: $primary-light-blue;
+                    width: 10rem;
+                    height: 1px;
+                    top: 98%; 
+                    left: 0%;
+                    border-bottom: $primary-light-blue 2px solid;
+                    border-radius: 5px;
+    
+                }
+            }
+        }
+        .footer-nav{
+            display: flex;
+            align-items: center;
+    
+            .footer-nav-items{
+                display: flex;
+                list-style: none;
+                
+                .footer-nav-item{
+                    margin-left: 2.5rem;
+                    font-size: 2.4rem;
+                    font-weight: 500;
+                    color: $secondary-white;
+                }
+                .active{
+                    font-weight: 700;
+                    color: $primary-white;
+                }
+            }
+        }
+    }
+}
+
