@@ -120,7 +120,10 @@ body {
   margin-left: 2.5rem;
   font-size: 2.4rem;
   font-weight: 500;
+}
+.main-footer .footer-content .footer-nav .footer-nav-items .footer-nav-item a {
   color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
 }
 .main-footer .footer-content .footer-nav .footer-nav-items .active {
   font-weight: 700;
@@ -129,7 +132,7 @@ body {
 .main-footer .quote {
   position: absolute;
   top: -40%;
-  left: 24%;
+  left: 14%;
   width: 103.1rem;
   height: 40rem;
   background-color: #17c2ec;
