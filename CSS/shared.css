@@ -191,4 +191,13 @@ body {
   padding: 1.7rem 3rem 1.7rem 3rem;
 }
 
+@media screen and (max-width: 1178px) {
+  .main-header .main-nav {
+    display: none;
+  }
+  .main-header .nav-cta {
+    display: none;
+  }
+}
+
 /*# sourceMappingURL=shared.css.map */

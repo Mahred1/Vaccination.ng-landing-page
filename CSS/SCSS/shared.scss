@@ -211,9 +211,20 @@ body{
                     padding: 1.7rem 3rem 1.7rem 3rem;
                 }
                 
-                
+                 
             }
          }
     }
 }
 
+// media queries
+@media screen and (max-width: 1178px){
+    .main-header{
+        .main-nav{
+            display: none;
+        }
+        .nav-cta{
+            display: none;
+        }
+    }
+}

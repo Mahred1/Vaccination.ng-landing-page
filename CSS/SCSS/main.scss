@@ -652,3 +652,26 @@
         }
     }
 }
+
+// media queries
+
+@media screen and (max-width: 1178px){
+    .hero{
+        .hero-info{
+            flex-wrap: wrap; 
+            .hero-img{
+                margin-bottom: 5rem;
+            }
+        }
+        .hero-banner{
+            .banner-items{
+                flex-wrap: wrap;
+                justify-content: space-between;
+                .submit-banner{
+                    width: 28.3rem;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}

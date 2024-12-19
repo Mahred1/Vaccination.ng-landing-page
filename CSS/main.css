@@ -615,4 +615,21 @@
   color: #ffffff;
 }
 
+@media screen and (max-width: 1178px) {
+  .hero .hero-info {
+    flex-wrap: wrap;
+  }
+  .hero .hero-info .hero-img {
+    margin-bottom: 5rem;
+  }
+  .hero .hero-banner .banner-items {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .hero .hero-banner .banner-items .submit-banner {
+    width: 28.3rem;
+    justify-content: center;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
