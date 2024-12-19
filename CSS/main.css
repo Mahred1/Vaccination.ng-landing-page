@@ -633,6 +633,27 @@
   .partners-section .partners img {
     max-width: 21%;
   }
+  .check-corona .check-covid {
+    width: 85vw;
+  }
+  .check-corona .check-covid .check-title {
+    text-align: left;
+  }
+  .check-corona .check-covid .check-patient {
+    flex-direction: column;
+    align-items: start;
+    width: 80%;
+    margin-left: auto;
+  }
+  .check-corona .check-covid .check-patient input {
+    width: 50rem;
+  }
+  .check-corona .check-covid .covid-cert h2 {
+    font-size: 2rem;
+  }
+  .check-corona .check-covid .covid-cert a {
+    font-size: 2rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
