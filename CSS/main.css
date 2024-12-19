@@ -676,6 +676,20 @@
     display: flex;
     gap: 3.7rem;
   }
+  .registration .registration-content {
+    flex-direction: column;
+    align-items: start;
+  }
+  .registration .registration-content h1 {
+    margin-bottom: 6.5rem;
+  }
+  .registration .registration-content .registration-details {
+    order: 2;
+  }
+  .registration .registration-content .registration-img {
+    order: 1;
+    margin-bottom: 7rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

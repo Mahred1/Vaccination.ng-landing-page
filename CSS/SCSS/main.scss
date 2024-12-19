@@ -736,4 +736,20 @@
             }
         }
     }
+    .registration{
+        .registration-content{
+            flex-direction: column;
+            align-items: start;
+            h1{
+                margin-bottom: 6.5rem;
+            }
+            .registration-details{
+                order: 2;
+            }
+            .registration-img{
+                order: 1;
+                margin-bottom: 7rem;
+            }
+        }
+    }
 }  
