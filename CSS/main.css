@@ -630,6 +630,9 @@
     width: 28.3rem;
     justify-content: center;
   }
+  .partners-section .partners img {
+    max-width: 21%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
