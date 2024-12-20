@@ -234,5 +234,20 @@ body {
     height: 38.5rem;
   }
 }
+@media screen and (max-width: 768px) {
+  .main-footer .quote {
+    width: 65.9rem;
+    height: 26.3rem;
+    top: -14rem;
+    left: 4.6rem;
+  }
+  .main-footer .quote:before {
+    width: 70.9rem;
+    height: 32rem;
+  }
+  .main-footer .quote .quote-content p {
+    margin-bottom: 2.8rem;
+  }
+}
 
 /*# sourceMappingURL=shared.css.map */

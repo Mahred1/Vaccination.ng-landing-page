@@ -218,6 +218,8 @@ body{
 }
 
 // media queries
+
+// mini desktop
 @media screen and (max-width: 1178px){
     .main-header{
         .main-nav{
@@ -267,3 +269,24 @@ body{
         }
 
     }
+
+// tablet
+@media screen and (max-width: 768px){
+    .main-footer{
+        .quote{
+            width: 65.9rem;
+            height: 26.3rem;
+            top: -14rem;
+            left: 4.6rem;
+            &:before{
+                width: 70.9rem;
+                height: 32rem;
+            }
+            .quote-content{
+                p{
+                    margin-bottom: 2.8rem;
+                }
+            }
+        }
+    }
+}
