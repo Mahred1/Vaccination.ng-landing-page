@@ -227,4 +227,14 @@ body{
             display: none;
         }
     }
+    .main-footer{
+        .quote{
+            width: 81rem;
+            height: 33rem;
+            &::before{
+                width: 85.7rem;
+                height: 38.5rem;
+            }
+        }
+    }
 }

@@ -198,6 +198,14 @@ body {
   .main-header .nav-cta {
     display: none;
   }
+  .main-footer .quote {
+    width: 81rem;
+    height: 33rem;
+  }
+  .main-footer .quote::before {
+    width: 85.7rem;
+    height: 38.5rem;
+  }
 }
 
 /*# sourceMappingURL=shared.css.map */
