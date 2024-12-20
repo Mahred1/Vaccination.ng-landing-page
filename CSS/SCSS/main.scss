@@ -570,6 +570,7 @@
                 right: -42rem;
             }
         }
+    
     }
 }
 
@@ -750,6 +751,70 @@
                 order: 1;
                 margin-bottom: 7rem;
             }
+        }
+    }
+    .symptoms{
+        .symptoms-content{
+            .symptoms-img{
+                .sick{
+                    width: 45.8rem;
+                }
+                .symptom{
+                    h2{
+                        font-size: 1.8rem;
+                        padding: 1.2rem 0 1.2rem 0.9rem;
+                        width: 15rem;
+                        left: -3rem;
+                        
+                    }
+                    img{
+                        width: 6.5rem;
+                        height: 6.5rem; 
+                    }
+                }
+                    .symptom-1{
+                        top: 1.5em;
+                        left: -5rem;
+                    }
+                    .symptom-2{
+                        top: 20rem;
+                        left: -17rem;
+                        
+                        h2{
+                            padding-left: 2rem;
+                            width: 22.5rem;
+                        }
+                    }
+                    .symptom-3{
+                        top: 11rem;
+                        left: -11rem;
+                    }
+                    .symptom-4{
+                        top: 1rem;
+                        right: -15rem;
+                        h2{
+                            padding-left: 2rem;
+                            width: 23rem;
+                        }
+                    }
+                    .symptom-5{
+                        top: 12rem;
+                        right: -20rem;
+                        h2{
+                            padding-left: 2rem;
+                            width: 22rem;
+                        }
+                    }
+                    .symptom-6{
+                        top: 21rem;
+                        right: -19rem;
+                        h2{
+                            padding-left:2rem;
+                            width: 15rem;
+                        }
+                        
+                    }
+                }
         }
     }
 }  
