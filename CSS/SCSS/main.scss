@@ -659,6 +659,8 @@
 
 // media queries
 
+// mini - desktop
+
 @media screen and (max-width: 1178px){
     .hero{
         .hero-info{
@@ -833,3 +835,26 @@
     }
     
 }  
+
+// tablet 
+@media screen and (max-width: 768px){
+    .vaccine-reasons{
+        .vaccine-reason__content{
+            .vaccine-cards{
+                .card-2,
+                .card-3{
+                    width: 29.6rem;
+                    height: 29rem;
+                    h2{
+                        margin-bottom: 2.4rem;
+                    }
+                }
+                .card-3{ 
+                    img.card-ico{
+                        margin-bottom: 4.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
