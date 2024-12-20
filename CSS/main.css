@@ -743,6 +743,12 @@
     padding-left: 2rem;
     width: 15rem;
   }
+  .feedback-section {
+    background: url(../../Assets/img/feedback/feedback-bg-small.jpg) no-repeat center/cover;
+  }
+  .feedback-section .feedback-content .customer-feedback {
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

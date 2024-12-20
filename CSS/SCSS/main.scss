@@ -817,4 +817,12 @@
                 }
         } 
     }
+    .feedback-section{
+        background: url(../../Assets/img/feedback/feedback-bg-small.jpg) no-repeat center/cover;
+        .feedback-content{
+            .customer-feedback{
+                flex-direction: column;
+            }
+        }
+    }
 }  
