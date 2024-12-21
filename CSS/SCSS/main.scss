@@ -977,8 +977,9 @@
                     }
                 } 
                 a{
-                    padding: 2rem 5rem;
+                    padding: 1.6rem 5rem;
                     font-size: 1.4rem;
+                    border-radius: 1rem;
                 }
             }
             .covid-cert{
@@ -991,6 +992,75 @@
                         margin-left: 0.4rem;
                     }
 
+                }
+            }
+        }
+    }
+    .vaccine-reasons{
+        .vaccine-reason__content{
+            .vaccine-reasons__heading{
+                width: 80%;
+                margin: 0 auto 4rem auto;
+                h1{
+                    margin-bottom: 1.7rem;
+                }
+            }
+            .vaccine-cards{
+                width: 80%;
+                margin: auto;
+                justify-content: start;
+                gap: 3rem;
+                .card-1{
+                    padding: 2rem 2rem 3.2rem 2rem;
+                    border-radius: 2rem 8rem 2rem 2rem;
+                    .card-ico{
+                        padding: 1rem;
+                        margin-bottom: 2rem;
+                        width: 5rem;
+                        height: 5rem;
+                        border-radius: 1rem;
+                    }
+                    p{
+                        font-size: 1.2rem;
+                        margin-bottom: 2.6rem;
+                        max-width: 23.5rem;
+                    }
+                    h2{
+                        font-size: 1.4rem;
+                        margin-bottom: 2rem;
+                        max-width: 17rem ;
+                    }
+                    .reasons-read__more{
+                        a{
+                            font-size: 1.4rem;
+                        }
+                        img{
+                            width: 2rem;
+                            height: 2rem;
+                        }
+                    }
+                }
+                .card-2,
+                .card-3{
+                    padding: 2rem 1.2rem 2.3rem 2rem;
+                    width: 18.8rem;
+                    height: 20.2rem;
+                    border-radius: 2rem;
+                    margin-left: 0;
+                    img.card-ico{
+                        width: 5rem;
+                        height: 5rem;
+                        border-radius: 1rem;
+                        margin-bottom: 3rem;
+                    }
+                    h2{
+                        font-size: 1.4rem;
+                        margin-bottom: 2rem;
+                    }
+                }
+                .minidesktop-cards{
+                    flex-direction: column;
+                    gap: 3rem; 
                 }
             }
         }
