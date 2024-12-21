@@ -49,8 +49,16 @@ a {
   a {
     font-size: 2rem;
   }
-  h2{
-    font-size: 2rem;
+}
+@media screen and (max-width: 375px) {
+  h1 {
+    font-size: 2.4rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+  p {
+    font-size: 1.4rem;
   }
 }
 

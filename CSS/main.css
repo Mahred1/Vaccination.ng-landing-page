@@ -770,5 +770,81 @@
     margin-bottom: 4.5rem;
   }
 }
+@media screen and (max-width: 375px) {
+  .hero {
+    margin-top: 2rem;
+  }
+  .hero .banner-icon {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  .hero .hero-info {
+    text-align: left;
+    gap: 5rem;
+  }
+  .hero .hero-info .hero-content h1 {
+    margin-bottom: 2rem;
+  }
+  .hero .hero-info .hero-content h2 {
+    margin-bottom: 2rem;
+  }
+  .hero .hero-info .hero-content p {
+    margin-bottom: 4rem;
+  }
+  .hero .hero-info .hero-content .hero-btn a {
+    font-size: 1.4rem;
+  }
+  .hero .hero-info .hero-content .hero-btn .hero-btn__primary,
+  .hero .hero-info .hero-content .hero-btn .hero-btn__secondary {
+    display: inline-flex;
+    width: 13.8rem;
+  }
+  .hero .hero-info .hero-img .main-img img {
+    width: 25.6rem;
+    height: 27.5rem;
+  }
+  .hero .hero-info .hero-img .inspecting-img img {
+    width: 5rem;
+    height: 5rem;
+  }
+  .hero .hero-info .hero-img .corona-img img {
+    width: 5rem;
+    height: 4.7rem;
+  }
+  .hero .hero-info .hero-img .doctors {
+    padding: 1.5rem 2rem;
+  }
+  .hero .hero-info .hero-img .doctors img {
+    width: 3.8rem;
+    height: 3.8rem;
+  }
+  .hero .hero-banner .banner-title {
+    gap: 1rem;
+  }
+  .hero .hero-banner .banner {
+    padding: 2.4rem 1rem;
+  }
+  .hero .hero-banner .banner .banner-items {
+    gap: 0;
+  }
+  .hero .hero-banner .banner .banner-items .row1,
+  .hero .hero-banner .banner .banner-items .row2 {
+    flex-wrap: wrap;
+  }
+  .hero .hero-banner .banner .banner-items .row1 div,
+  .hero .hero-banner .banner .banner-items .row2 div {
+    gap: 1rem;
+    margin-bottom: 1.4rem;
+    margin-right: 2rem;
+  }
+  .hero .hero-banner .banner .banner-items .submit-banner {
+    width: 15rem;
+    height: 5rem;
+    border-radius: 1rem;
+  }
+  .hero .hero-banner .banner .banner-items .submit-banner a h2 {
+    font-size: 1.4rem;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */

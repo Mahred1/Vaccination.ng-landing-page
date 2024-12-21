@@ -859,3 +859,99 @@
     }
 
 }
+// mobile
+@media screen and (max-width: 375px){
+    .hero{
+        .banner-icon{
+            width: 3.5rem;
+            height: 3.5rem; 
+        }
+        margin-top: 2rem;
+        .hero-info{
+            text-align: left;
+            gap:5rem;
+            .hero-content{
+                h1{
+                    margin-bottom: 2rem;
+                }
+                h2{
+                    margin-bottom: 2rem;
+                }
+                p{
+                    margin-bottom: 4rem;
+
+                }
+                .hero-btn{
+                    a{
+                        font-size: 1.4rem;
+                    }
+                    .hero-btn__primary, 
+                    .hero-btn__secondary{
+                        display: inline-flex;
+                        width: 13.8rem;
+                    }
+                }
+            }
+            .hero-img{
+                .main-img{
+                    img{
+                        width: 25.6rem;
+                        height: 27.5rem;
+                    }
+                }
+                .inspecting-img{
+                    img{
+                        width: 5rem;
+                        height: 5rem;
+                    }
+                }
+                .corona-img{
+                    img{
+                        width: 5rem;
+                        height: 4.7rem;
+                    }
+                }
+                .doctors{
+                    padding: 1.5rem 2rem;
+                    img{
+                        width: 3.8rem;
+                        height: 3.8rem;
+                    }
+                }
+            }
+           
+        } 
+        .hero-banner{
+            .banner-title{
+                gap: 1rem;
+            }
+            .banner{
+                padding: 2.4rem 1rem;
+                .banner-items{
+                    gap:0;
+                .row1,
+                .row2{
+                    flex-wrap: wrap;
+                    div{
+                        gap: 1rem;
+                        margin-bottom: 1.4rem;
+                        margin-right: 2rem;
+                    }
+                }  
+                .submit-banner{
+                    width: 15rem; 
+                    height: 5rem;
+                    border-radius: 1rem;
+                    a{
+                        h2{
+                            font-size: 1.4rem;
+                        }
+                    }
+                }
+                }
+                
+            }
+        }
+    }
+
+}
