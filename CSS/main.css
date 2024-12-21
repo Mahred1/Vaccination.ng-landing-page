@@ -198,6 +198,7 @@
   color: rgba(255, 255, 255, 0.5);
   font-size: 2.4rem;
   font-weight: 500;
+  user-select: none;
 }
 .check-corona .check-covid .check-patient a {
   text-decoration: none;
@@ -847,6 +848,36 @@
   }
   .partners-section .partners {
     gap: 1.2rem;
+  }
+  .check-corona .check-covid .check-title {
+    padding: 1.4rem 0;
+  }
+  .check-corona .check-covid .check-patient {
+    width: 90%;
+  }
+  .check-corona .check-covid .check-patient input {
+    min-width: 10rem;
+    max-width: 28rem;
+    height: 5rem;
+    border-radius: 1rem;
+  }
+  .check-corona .check-covid .check-patient input::placeholder {
+    font-size: 1.2rem;
+  }
+  .check-corona .check-covid .check-patient a {
+    padding: 2rem 5rem;
+    font-size: 1.4rem;
+  }
+  .check-corona .check-covid .covid-cert {
+    text-align: center;
+    padding: 1.3rem 1.4rem;
+  }
+  .check-corona .check-covid .covid-cert h2 {
+    font-size: 1rem;
+  }
+  .check-corona .check-covid .covid-cert h2 a {
+    font-size: 1rem;
+    margin-left: 0.4rem;
   }
 }
 

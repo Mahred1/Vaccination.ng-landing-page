@@ -211,6 +211,7 @@
                     color: $secondary-white;
                     font-size: 2.4rem;
                     font-weight: 500;
+                    user-select: none;
                 }
             }
             a{
@@ -959,4 +960,39 @@
         
         } 
      }
+    .check-corona{
+        .check-covid{
+            .check-title{
+                padding: 1.4rem 0;
+            }
+            .check-patient{
+                width: 90%;
+                input{
+                    min-width: 10rem;
+                    max-width: 28rem; 
+                    height: 5rem;
+                    border-radius: 1rem;
+                    &::placeholder{
+                        font-size: 1.2rem;
+                    }
+                } 
+                a{
+                    padding: 2rem 5rem;
+                    font-size: 1.4rem;
+                }
+            }
+            .covid-cert{
+                text-align: center; 
+                padding: 1.3rem 1.4rem;
+                h2{
+                    font-size: 1rem;
+                    a{
+                        font-size: 1rem;
+                        margin-left: 0.4rem;
+                    }
+
+                }
+            }
+        }
+    }
 }
