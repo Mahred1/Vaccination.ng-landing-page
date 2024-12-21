@@ -945,6 +945,80 @@
     flex-direction: column;
     gap: 3rem;
   }
+  .registration .registration-content {
+    align-items: center;
+  }
+  .registration .registration-content h1 {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  .registration .registration-content .registration-img {
+    width: 28.9rem;
+    height: 41.83rem;
+  }
+  .registration .registration-content .registration-img img.syringe {
+    width: 28.65rem;
+    height: 36.5rem;
+  }
+  .registration .registration-content .registration-img img.corona-reg {
+    width: 7.48rem;
+    height: 7.22rem;
+  }
+  .registration .registration-content .registration-img h2 {
+    font-size: 1.4rem;
+    top: 2.5rem;
+    left: 8rem;
+  }
+  .registration .registration-content .registration-details {
+    width: 100%;
+  }
+  .registration .registration-content .registration-details input::placeholder {
+    font-size: 1.4rem;
+  }
+  .registration .registration-content .registration-details h2 {
+    font-size: 1.4rem;
+  }
+  .registration .registration-content .registration-details input.full-name {
+    width: 30.5rem;
+    height: 5rem;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    padding: 1.3rem 2rem 1rem 2rem;
+  }
+  .registration .registration-content .registration-details p {
+    font-size: 1.4rem;
+    width: 32.1rem;
+  }
+  .registration .registration-content .registration-details .phone-field {
+    flex-wrap: wrap;
+    margin-bottom: 6rem;
+  }
+  .registration .registration-content .registration-details .phone-field .phone-number {
+    min-width: 20rem;
+    width: 30.5rem;
+    height: 5rem;
+    border-radius: 1rem;
+    padding: 1.3rem 2rem 1rem 2rem;
+  }
+  .registration .registration-content .registration-details .phone-field a {
+    border-radius: 1rem;
+    font-size: 1.4rem;
+  }
+  .registration .registration-content .registration-details a.submit-reg {
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    padding: 2rem 12.9rem;
+    display: inline-block;
+    font-size: 1.4rem;
+  }
+  .registration .registration-content .registration-details .reg-footer {
+    gap: 2rem;
+    margin-top: 0;
+  }
+  .registration .registration-content .registration-details .reg-footer span,
+  .registration .registration-content .registration-details .reg-footer a {
+    font-size: 1.4rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
