@@ -845,6 +845,9 @@
   .hero .hero-banner .banner .banner-items .submit-banner a h2 {
     font-size: 1.4rem;
   }
+  .partners-section .partners {
+    gap: 1.2rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
