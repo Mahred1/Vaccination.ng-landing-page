@@ -254,6 +254,9 @@ body {
     margin-bottom: 0;
     font-size: 1.8rem;
   }
+  .main-footer {
+    padding: 13.3rem 0 3rem 0;
+  }
   .main-footer .quote {
     width: 28rem;
     height: 14.7rem;
@@ -274,7 +277,7 @@ body {
     font-size: 1rem;
   }
   .main-footer .quote .quote-content .quote-email {
-    margin-bottom: 2.8rem;
+    margin-bottom: 0.8rem;
   }
   .main-footer .quote .quote-content .quote-email input {
     width: 17.5rem;
@@ -289,6 +292,32 @@ body {
     width: 5.8rem;
     height: 5rem;
     padding: 0.7rem 2.3rem 0.7rem 1.1rem;
+  }
+  .main-footer .footer-content .logo {
+    margin-bottom: 3rem;
+  }
+  .main-footer .footer-content .logo h1 {
+    font-size: 1.8rem;
+  }
+  .main-footer .footer-content .logo h1::before {
+    top: 2.8rem;
+  }
+  .main-footer .footer-content .footer-nav {
+    margin-bottom: 2rem;
+  }
+  .main-footer .footer-content .footer-nav .footer-nav-items {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .main-footer .footer-content .footer-nav .footer-nav-items .footer-nav-item {
+    margin-left: 0;
+  }
+  .main-footer .footer-content .footer-nav .footer-nav-items .footer-nav-item a {
+    font-size: 1.4rem;
+  }
+  .main-footer .footer-content .socialmedia a img {
+    width: 1.8rem;
+    height: 1.8rem;
   }
 }
 
