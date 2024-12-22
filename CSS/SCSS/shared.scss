@@ -24,7 +24,9 @@ body{
     position: sticky;
     top: -1.5rem;
     z-index: 100;
-
+    .burger{
+        display: none;
+    }
    
     .logo{ 
         h1{
@@ -228,6 +230,9 @@ body{
 // mini desktop
 @media screen and (max-width: 1178px){
     .main-header{
+        .burger{ 
+            display: block;
+        }
         .main-nav{
             display: none;
         }
@@ -300,6 +305,12 @@ body{
 // mobile
 @media screen and (max-width: 375px){
     .main-header{
+        .burger{
+            img{
+            width: 4.5rem;
+            height: 4.5rem; 
+            }
+        }
         .logo{
             h1{
                 margin-bottom: 0;

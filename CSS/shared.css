@@ -24,6 +24,9 @@ body {
   top: -1.5rem;
   z-index: 100;
 }
+.main-header .burger {
+  display: none;
+}
 .main-header .logo h1 {
   color: #ffffff;
   font-size: 3.2rem;
@@ -198,6 +201,9 @@ body {
 }
 
 @media screen and (max-width: 1178px) {
+  .main-header .burger {
+    display: block;
+  }
   .main-header .main-nav {
     display: none;
   }
@@ -255,7 +261,11 @@ body {
     margin-bottom: 2.8rem;
   }
 }
-@media screen and (max-width: 75px) {
+@media screen and (max-width: 375px) {
+  .main-header .burger img {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
   .main-header .logo h1 {
     margin-bottom: 0;
     font-size: 1.8rem;
