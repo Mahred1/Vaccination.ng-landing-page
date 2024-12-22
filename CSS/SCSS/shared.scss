@@ -1,10 +1,15 @@
 @import 'colors';
 // Front section
 body{
-    overflow-x: hidden;
+    overflow-x: hidden; 
 }
 .front{
-    min-height: 100vh;
+    position: absolute;
+    width: 100%; 
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -2;
     background:rgba(0, 0, 0, 1) url('../../Assets/img/front.jpg') no-repeat center/cover ;
 }
 // header section
@@ -18,6 +23,7 @@ body{
     padding-top: 4rem;
     position: sticky;
     top: -1.5rem;
+    z-index: 100;
 
    
     .logo{ 

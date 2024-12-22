@@ -1,9 +1,10 @@
 @import "colors";
 // Hero section
 .hero{
-    width: 90vw;
+    width: 90vw; 
     margin: auto;
     margin-top: 12rem;
+    position: relative;
     .hero-info{
         display: flex;
         align-items: center;

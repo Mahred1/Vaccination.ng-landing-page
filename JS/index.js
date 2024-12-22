@@ -12,12 +12,24 @@ let card3 =document.querySelector(".card-3");
 let regContent = document.querySelector(".registration-content");
 let regDetail = document.querySelector(".registration-details");
 let regHeader = document.querySelector(".registration-details h1");
-console.log(regHeader);
+let hero = document.querySelector(".hero");
+let front = document.querySelector(".front");
+let mainHeader = document.querySelector(".main-header");
 
 let miniDesktop = window.matchMedia("(max-width: 1178px)");
+let heroStyle= window.getComputedStyle(hero);
+
+function heroHeight(){
+    const marginTop= parseInt(heroStyle.marginTop);
+    const marginBottom= parseInt(heroStyle.marginBottom);
+    const rect = hero.getBoundingClientRect();
+    const rect2 =mainHeader.getBoundingClientRect();
+    front.style.height=`${rect.height+rect2.height+marginBottom+marginTop}px`;
+
+}
 
 function responsivecomponents(x){
-;
+
     if (x.matches) {
 
         row1.appendChild(myLocation);
@@ -45,9 +57,9 @@ function responsivecomponents(x){
 }
 
 
-
+heroHeight();
 responsivecomponents(miniDesktop); 
 window.addEventListener("resize",()=>{
  responsivecomponents(miniDesktop); 
-    
+    heroHeight();
 })

@@ -2,6 +2,7 @@
   width: 90vw;
   margin: auto;
   margin-top: 12rem;
+  position: relative;
 }
 .hero .hero-info {
   display: flex;
