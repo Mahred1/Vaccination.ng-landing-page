@@ -1222,4 +1222,47 @@
             }
         }
     }
+    .feedback-section{
+        .feedback-content{
+            h2{
+                font-size: 1.4rem;
+            }
+            h1{
+                margin-bottom: 1rem;
+            }
+            p{
+                width: 24.8rem;
+                margin-bottom: 1.6rem; 
+                font-size: 1.2rem;
+            }
+            .customer-feedback{
+                margin-top: 0;
+                gap: 3rem; 
+                margin-bottom: 24rem; 
+                .customer{
+                    width: 30.5rem;
+                    height: 19.1rem;
+                    .profile{
+                        img{
+                            width: 5.3rem;
+                            height: 5.3rem; 
+                        }
+                        .customer-info{
+                            p{
+                                font-size: 1rem;
+                            }
+                            h2{
+                                font-size: 1.35rem;
+                            }
+                        }
+                    }
+                    p.customer-testimonial{
+                        margin: 3rem 0 3.3rem 0;
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+
+    }
 } 
