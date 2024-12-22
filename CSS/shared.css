@@ -254,6 +254,40 @@ body {
     margin-bottom: 0;
     font-size: 1.8rem;
   }
+  .main-footer .quote {
+    width: 28rem;
+    height: 14.7rem;
+    border-radius: 1rem;
+  }
+  .main-footer .quote::before {
+    width: 30.5rem;
+    height: 20.6rem;
+    border-radius: 2rem;
+  }
+  .main-footer .quote .quote-content h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+  .main-footer .quote .quote-content p {
+    font-size: 1rem;
+  }
+  .main-footer .quote .quote-content .quote-email {
+    margin-bottom: 2.8rem;
+  }
+  .main-footer .quote .quote-content .quote-email input {
+    width: 17.5rem;
+    height: 4rem;
+    border-radius: 2rem 0 0 2rem;
+    padding: 2.5rem 2.5rem;
+  }
+  .main-footer .quote .quote-content .quote-email input::placeholder {
+    font-size: 1rem;
+  }
+  .main-footer .quote .quote-content .quote-email img {
+    width: 5.8rem;
+    height: 5rem;
+    padding: 0.7rem 2.3rem 0.7rem 1.1rem;
+  }
 }
 
 /*# sourceMappingURL=shared.css.map */
