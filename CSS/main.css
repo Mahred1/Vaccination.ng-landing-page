@@ -620,6 +620,47 @@
   color: #ffffff;
 }
 
+@media screen and (max-width: 1330px) {
+  .partners-section .partners {
+    gap: 2.8rem;
+  }
+  .partners-section .partners img {
+    width: 21%;
+  }
+  .symptoms .symptoms-content .symptoms-img .symptom-1 {
+    top: 3rem;
+    left: -9rem;
+  }
+  .symptoms .symptoms-content .symptoms-img .symptom-2 {
+    top: 21rem;
+    left: -23rem;
+  }
+  .symptoms .symptoms-content .symptoms-img .symptom-2 h2 {
+    padding-left: 6rem;
+  }
+  .symptoms .symptoms-content .symptoms-img .symptom-3 {
+    top: 38rem;
+    left: -31rem;
+  }
+  .symptoms .symptoms-content .symptoms-img .symptom-4 {
+    top: 3rem;
+    right: -18rem;
+  }
+  .symptoms .symptoms-content .symptoms-img .symptom-4 h2 {
+    padding-left: 6.5rem;
+  }
+  .symptoms .symptoms-content .symptoms-img .symptom-5 {
+    top: 21rem;
+    right: -28rem;
+  }
+  .symptoms .symptoms-content .symptoms-img .symptom-5 h2 {
+    padding-left: 6rem;
+  }
+  .symptoms .symptoms-content .symptoms-img .symptom-6 {
+    top: 38rem;
+    right: -36rem;
+  }
+}
 @media screen and (max-width: 1178px) {
   .hero .hero-info {
     flex-wrap: wrap;

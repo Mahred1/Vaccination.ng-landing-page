@@ -661,6 +661,56 @@
 
 // media queries
 
+// medium desktop
+@media screen and (max-width: 1330px){
+    .partners-section{
+        .partners{
+            gap: 2.8rem;
+            img{
+                width: 21%;
+            }
+        }
+    }
+   .symptoms{
+    .symptoms-content{
+        .symptoms-img{
+            .symptom-1{
+                top: 3rem;
+                left: -9rem;
+            }
+            .symptom-2{
+                top: 21rem;
+                left: -23rem;
+                h2{
+                    padding-left: 6rem;
+                }
+            }
+            .symptom-3{
+                top: 38rem;
+                left: -31rem;
+            }
+            .symptom-4{
+                top: 3rem;
+                right: -18rem ;
+                h2{
+                    padding-left: 6.5rem;
+                }
+            }
+            .symptom-5{
+                top: 21rem;
+                right: -28rem;
+                h2{
+                    padding-left: 6rem;
+                }
+            }
+            .symptom-6{
+                top: 38rem;
+                right: -36rem; 
+            }
+        }
+    }
+   }
+}
 // mini - desktop
 
 @media screen and (max-width: 1178px){
