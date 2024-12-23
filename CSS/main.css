@@ -241,7 +241,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 4rem;
+  margin-bottom: 8rem;
 }
 .vaccine-reasons .vaccine-reason__content .vaccine-reasons__heading h1 {
   max-width: 50rem;
@@ -620,6 +620,32 @@
   color: #ffffff;
 }
 
+@media screen and (min-width: 1330px) {
+  .hero {
+    width: 75vw;
+  }
+  .hero .hero-banner .banner {
+    width: 75vw;
+  }
+  .check-corona .check-covid {
+    width: 75vw;
+  }
+  .check-corona .check-covid .check-patient {
+    width: 75vw;
+  }
+  .vaccine-reasons .vaccine-reason__content {
+    width: 75vw;
+  }
+  .vaccine-reasons .vaccine-reason__content .vaccine-reasons__heading {
+    align-items: center;
+  }
+  .vaccine-reasons .vaccine-reason__content .vaccine-reasons__heading h1 {
+    max-width: 76rem;
+  }
+  .registration .registration-content {
+    width: 73vw;
+  }
+}
 @media screen and (max-width: 1330px) {
   .partners-section .partners {
     gap: 2.8rem;

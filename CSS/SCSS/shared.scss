@@ -226,7 +226,20 @@ body{
 }
 
 // media queries
-
+// Large screens{
+@media screen and (min-width: 1330px){
+   .main-header{
+    width: 75vw;
+    margin:auto;
+   }
+   .main-footer{
+       padding-bottom: 6rem; 
+    .footer-content{
+        width: 75vw; 
+        
+    }
+   }
+}
 // medium desktop
 @media screen and (max-width: 1330px){
 

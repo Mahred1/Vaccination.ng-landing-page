@@ -200,6 +200,18 @@ body {
   padding: 1.7rem 3rem 1.7rem 3rem;
 }
 
+@media screen and (min-width: 1330px) {
+  .main-header {
+    width: 75vw;
+    margin: auto;
+  }
+  .main-footer {
+    padding-bottom: 6rem;
+  }
+  .main-footer .footer-content {
+    width: 75vw;
+  }
+}
 @media screen and (max-width: 1178px) {
   .main-header .burger {
     display: block;
