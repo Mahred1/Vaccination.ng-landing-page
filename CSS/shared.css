@@ -91,7 +91,6 @@ body {
 .main-footer {
   background: url(../../Assets/img/footer/footer-bg.jpg) no-repeat center/cover;
   padding: 32.8rem 0 12.8rem 0;
-  position: relative;
 }
 .main-footer .footer-content {
   width: 90vw;
@@ -120,6 +119,7 @@ body {
 .main-footer .footer-content .footer-nav {
   display: flex;
   align-items: center;
+  position: relative;
 }
 .main-footer .footer-content .footer-nav .footer-nav-items {
   display: flex;
@@ -141,8 +141,8 @@ body {
 .main-footer .quote {
   position: absolute;
   z-index: 5;
-  top: -40%;
-  left: 14%;
+  top: -56rem;
+  left: -55%;
   width: 103.1rem;
   height: 40rem;
   background-color: #17c2ec;
@@ -240,18 +240,25 @@ body {
   .main-footer .quote {
     width: 81rem;
     height: 33rem;
+    top: -60rem;
+    left: 14%;
   }
   .main-footer .quote::before {
     width: 85.7rem;
     height: 38.5rem;
   }
 }
+@media screen and (max-width: 920px) {
+  .main-footer .quote {
+    left: 1%;
+  }
+}
 @media screen and (max-width: 768px) {
   .main-footer .quote {
     width: 65.9rem;
     height: 26.3rem;
-    top: -14rem;
-    left: 4.6rem;
+    top: -60rem;
+    left: 4%;
   }
   .main-footer .quote:before {
     width: 70.9rem;
@@ -259,6 +266,122 @@ body {
   }
   .main-footer .quote .quote-content p {
     margin-bottom: 2.8rem;
+  }
+}
+@media screen and (max-width: 650px) {
+  .main-header .burger img {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+  .main-header .logo h1 {
+    margin-bottom: 0;
+    font-size: 1.8rem;
+  }
+  .main-footer {
+    padding: 13.3rem 0 3rem 0;
+  }
+  .main-footer .quote {
+    width: 42rem;
+    height: 19rem;
+    border-radius: 2rem;
+    top: -29rem;
+    left: 8rem;
+  }
+  .main-footer .quote::before {
+    width: 44rem;
+    height: 21rem;
+    border-radius: 2rem;
+  }
+  .main-footer .quote .quote-content h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  .main-footer .quote .quote-content p {
+    font-size: 1.4rem;
+  }
+  .main-footer .quote .quote-content .quote-email {
+    margin-bottom: 0.8rem;
+  }
+  .main-footer .quote .quote-content .quote-email input {
+    width: 24rem;
+    height: 4rem;
+    border-radius: 2rem 0 0 2rem;
+    padding: 2.5rem 2.5rem;
+  }
+  .main-footer .quote .quote-content .quote-email input::placeholder {
+    font-size: 1.3rem;
+  }
+  .main-footer .quote .quote-content .quote-email img {
+    width: 5.8rem;
+    height: 5rem;
+    padding: 0.7rem 2.3rem 0.7rem 1.1rem;
+  }
+  .main-footer .footer-content .logo {
+    margin-bottom: 3rem;
+  }
+  .main-footer .footer-content .logo h1 {
+    font-size: 1.8rem;
+  }
+  .main-footer .footer-content .logo h1::before {
+    top: 2.8rem;
+  }
+  .main-footer .footer-content .footer-nav {
+    margin-bottom: 2rem;
+  }
+  .main-footer .footer-content .footer-nav .footer-nav-items {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .main-footer .footer-content .footer-nav .footer-nav-items .footer-nav-item {
+    margin-left: 0;
+  }
+  .main-footer .footer-content .footer-nav .footer-nav-items .footer-nav-item a {
+    font-size: 1.4rem;
+  }
+  .main-footer .footer-content .socialmedia a img {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+}
+@media screen and (max-width: 520px) {
+  .main-footer {
+    padding: 13.3rem 0 3rem 0;
+  }
+  .main-footer .quote {
+    width: 38rem;
+    height: 16.7rem;
+    border-radius: 2rem;
+    top: -28rem;
+    left: 4rem;
+  }
+  .main-footer .quote::before {
+    width: 40.5rem;
+    height: 20.6rem;
+    border-radius: 2rem;
+  }
+  .main-footer .quote .quote-content h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  .main-footer .quote .quote-content p {
+    font-size: 1.2rem;
+  }
+  .main-footer .quote .quote-content .quote-email {
+    margin-bottom: 0.8rem;
+  }
+  .main-footer .quote .quote-content .quote-email input {
+    width: 23.5rem;
+    height: 4rem;
+    border-radius: 2rem 0 0 2rem;
+    padding: 2.5rem 2.5rem;
+  }
+  .main-footer .quote .quote-content .quote-email input::placeholder {
+    font-size: 1.4rem;
+  }
+  .main-footer .quote .quote-content .quote-email img {
+    width: 5.8rem;
+    height: 5rem;
+    padding: 0.7rem 2.3rem 0.7rem 1.1rem;
   }
 }
 @media screen and (max-width: 375px) {

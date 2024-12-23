@@ -813,6 +813,331 @@
     margin-bottom: 4.5rem;
   }
 }
+@media screen and (max-width: 650px) {
+  .hero {
+    margin-top: 2rem;
+  }
+  .hero .banner-icon {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  .hero .hero-info {
+    text-align: left;
+    gap: 5rem;
+  }
+  .hero .hero-info .hero-content h1 {
+    margin-bottom: 2rem;
+  }
+  .hero .hero-info .hero-content h2 {
+    margin-bottom: 2rem;
+  }
+  .hero .hero-info .hero-content p {
+    margin-bottom: 4rem;
+  }
+  .hero .hero-info .hero-content .hero-btn a {
+    font-size: 1.4rem;
+  }
+  .hero .hero-info .hero-content .hero-btn .hero-btn__primary,
+  .hero .hero-info .hero-content .hero-btn .hero-btn__secondary {
+    display: inline-flex;
+    width: 14rem;
+  }
+  .hero .hero-info .hero-img .main-img img {
+    width: 25.6rem;
+    height: 27.5rem;
+  }
+  .hero .hero-info .hero-img .inspecting-img img {
+    width: 5rem;
+    height: 5rem;
+  }
+  .hero .hero-info .hero-img .corona-img img {
+    width: 5rem;
+    height: 4.7rem;
+  }
+  .hero .hero-info .hero-img .doctors {
+    padding: 1rem 1.5rem;
+  }
+  .hero .hero-info .hero-img .doctors h2 {
+    font-size: 1.2rem;
+  }
+  .hero .hero-info .hero-img .doctors img {
+    width: 3.8rem;
+    height: 3.8rem;
+  }
+  .hero .hero-banner .banner-title {
+    gap: 1rem;
+  }
+  .hero .hero-banner .banner {
+    padding: 2.4rem 1rem;
+  }
+  .hero .hero-banner .banner .banner-items {
+    gap: 0;
+  }
+  .hero .hero-banner .banner .banner-items .row1,
+  .hero .hero-banner .banner .banner-items .row2 {
+    flex-wrap: wrap;
+  }
+  .hero .hero-banner .banner .banner-items .row1 div,
+  .hero .hero-banner .banner .banner-items .row2 div {
+    gap: 1rem;
+    margin-bottom: 1.4rem;
+    margin-right: 2rem;
+  }
+  .hero .hero-banner .banner .banner-items .submit-banner {
+    width: 15rem;
+    height: 5rem;
+    border-radius: 1rem;
+  }
+  .hero .hero-banner .banner .banner-items .submit-banner a h2 {
+    font-size: 1.4rem;
+  }
+  .partners-section .partners {
+    gap: 1.2rem;
+  }
+  .check-corona .check-covid .check-title {
+    padding: 1.4rem 0;
+  }
+  .check-corona .check-covid .check-patient {
+    width: 90%;
+  }
+  .check-corona .check-covid .check-patient input {
+    min-width: 41rem;
+    max-width: 28rem;
+    height: 5rem;
+    border-radius: 1rem;
+  }
+  .check-corona .check-covid .check-patient input::placeholder {
+    font-size: 1.4rem;
+  }
+  .check-corona .check-covid .check-patient a {
+    padding: 1.6rem 5rem;
+    font-size: 1.4rem;
+    border-radius: 1rem;
+  }
+  .check-corona .check-covid .covid-cert {
+    text-align: center;
+    padding: 1.3rem 1.4rem;
+  }
+  .check-corona .check-covid .covid-cert h2 {
+    font-size: 1.4rem;
+  }
+  .check-corona .check-covid .covid-cert h2 a {
+    font-size: 1rem;
+    margin-left: 0.4rem;
+  }
+  .vaccine-reasons .vaccine-reason__content .vaccine-reasons__heading {
+    width: 80%;
+    margin: 0 auto 4rem auto;
+  }
+  .vaccine-reasons .vaccine-reason__content .vaccine-reasons__heading h1 {
+    margin-bottom: 1.7rem;
+  }
+  .vaccine-reasons .vaccine-reason__content .vaccine-cards {
+    width: 80%;
+    margin: auto;
+    justify-content: start;
+    gap: 3rem;
+  }
+  .vaccine-reasons .vaccine-reason__content .vaccine-cards .card-1 {
+    padding: 2rem 2rem 3.2rem 2rem;
+    border-radius: 2rem 8rem 2rem 2rem;
+  }
+  .vaccine-reasons .vaccine-reason__content .vaccine-cards .card-2,
+  .vaccine-reasons .vaccine-reason__content .vaccine-cards .card-3 {
+    padding: 2rem 1.2rem 2.3rem 2rem;
+    margin-left: 0;
+  }
+  .vaccine-reasons .vaccine-reason__content .vaccine-cards .card-2 h2,
+  .vaccine-reasons .vaccine-reason__content .vaccine-cards .card-3 h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  .vaccine-reasons .vaccine-reason__content .vaccine-cards .minidesktop-cards {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .registration .registration-content {
+    align-items: center;
+  }
+  .registration .registration-content h1 {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  .registration .registration-content .registration-img {
+    width: 28.9rem;
+    height: 41.83rem;
+  }
+  .registration .registration-content .registration-img img.syringe {
+    width: 28.65rem;
+    height: 36.5rem;
+  }
+  .registration .registration-content .registration-img img.corona-reg {
+    width: 7.48rem;
+    height: 7.22rem;
+  }
+  .registration .registration-content .registration-img h2 {
+    font-size: 2rem;
+    top: 2.5rem;
+    left: 8rem;
+  }
+  .registration .registration-content .registration-details {
+    width: 100%;
+  }
+  .registration .registration-content .registration-details input::placeholder {
+    font-size: 1.8rem;
+  }
+  .registration .registration-content .registration-details h2 {
+    font-size: 1.8rem;
+  }
+  .registration .registration-content .registration-details input.full-name {
+    width: 30.5rem;
+    height: 5rem;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    padding: 1.3rem 2rem 1rem 2rem;
+  }
+  .registration .registration-content .registration-details p {
+    font-size: 1.8rem;
+    width: 32.1rem;
+  }
+  .registration .registration-content .registration-details .phone-field {
+    min-width: fit-content;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+  }
+  .registration .registration-content .registration-details .phone-field .phone-number {
+    min-width: 20rem;
+    width: 30.5rem;
+    height: 5rem;
+    border-radius: 1rem;
+    padding: 1.3rem 2rem 1rem 2rem;
+  }
+  .registration .registration-content .registration-details .phone-field a {
+    border-radius: 1rem;
+    font-size: 1.4rem;
+  }
+  .registration .registration-content .registration-details a.submit-reg {
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    padding: 2rem 12.9rem;
+    display: inline-block;
+    font-size: 1.4rem;
+  }
+  .registration .registration-content .registration-details .reg-footer {
+    justify-content: start;
+    gap: 2rem;
+    margin-top: 0;
+  }
+  .registration .registration-content .registration-details .reg-footer span,
+  .registration .registration-content .registration-details .reg-footer a {
+    font-size: 1.4rem;
+  }
+  .symptoms .symptoms-content h1 {
+    margin-bottom: 1rem;
+  }
+  .symptoms .symptoms-content h2 {
+    margin-bottom: 1rem;
+  }
+  .symptoms .symptoms-content p {
+    font-size: 1.2rem;
+    max-width: 29.6rem;
+  }
+  .symptoms .symptoms-content .symptoms-img {
+    margin-top: 3rem;
+  }
+  .symptoms .symptoms-content .symptoms-img img.sick {
+    width: 22.3rem;
+    height: 16.7rem;
+  }
+  .symptoms .symptoms-content .symptoms-img .symptom img {
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+  .symptoms .symptoms-content .symptoms-img .symptom h2 {
+    font-size: 0.87rem;
+    padding: 0.58rem 0.78rem 0.55rem 2.8rem;
+    width: 8.5rem;
+    border-radius: 0.48rem;
+    left: -2rem;
+  }
+  .symptoms .symptoms-content .symptoms-img .symptom-1 {
+    top: 1.5em;
+    left: -2rem;
+  }
+  .symptoms .symptoms-content .symptoms-img .symptom-1 h2 {
+    margin-right: 1rem;
+  }
+  .symptoms .symptoms-content .symptoms-img .symptom-2 {
+    top: 6rem;
+    left: -4rem;
+  }
+  .symptoms .symptoms-content .symptoms-img .symptom-2 h2 {
+    padding: 0.58rem 0.78rem 0.55rem 1rem;
+    width: 12.6rem;
+  }
+  .symptoms .symptoms-content .symptoms-img .symptom-3 {
+    top: 10rem;
+    left: -6rem;
+  }
+  .symptoms .symptoms-content .symptoms-img .symptom-4 {
+    top: 1.75rem;
+    right: -7rem;
+  }
+  .symptoms .symptoms-content .symptoms-img .symptom-4 h2 {
+    padding-left: 2rem;
+    width: 13rem;
+  }
+  .symptoms .symptoms-content .symptoms-img .symptom-5 {
+    top: 6.5rem;
+    right: -9.5rem;
+  }
+  .symptoms .symptoms-content .symptoms-img .symptom-5 h2 {
+    padding-left: 2rem;
+    width: 12rem;
+  }
+  .symptoms .symptoms-content .symptoms-img .symptom-6 {
+    top: 11rem;
+    right: -8.5rem;
+  }
+  .symptoms .symptoms-content .symptoms-img .symptom-6 h2 {
+    padding-left: 2rem;
+    width: 9rem;
+  }
+  .feedback-section .feedback-content h2 {
+    font-size: 1.4rem;
+  }
+  .feedback-section .feedback-content h1 {
+    margin-bottom: 1rem;
+  }
+  .feedback-section .feedback-content p {
+    width: 24.8rem;
+    margin-bottom: 1.6rem;
+    font-size: 1.2rem;
+  }
+  .feedback-section .feedback-content .customer-feedback {
+    margin-top: 0;
+    gap: 3rem;
+    margin-bottom: 24rem;
+  }
+  .feedback-section .feedback-content .customer-feedback .customer {
+    width: 30.5rem;
+    height: 19.1rem;
+  }
+  .feedback-section .feedback-content .customer-feedback .customer .profile img {
+    width: 5.3rem;
+    height: 5.3rem;
+  }
+  .feedback-section .feedback-content .customer-feedback .customer .profile .customer-info p {
+    font-size: 1rem;
+  }
+  .feedback-section .feedback-content .customer-feedback .customer .profile .customer-info h2 {
+    font-size: 1.35rem;
+  }
+  .feedback-section .feedback-content .customer-feedback .customer p.customer-testimonial {
+    margin: 3rem 0 3.3rem 0;
+    font-size: 1.2rem;
+  }
+}
 @media screen and (max-width: 375px) {
   .hero {
     margin-top: 2rem;
