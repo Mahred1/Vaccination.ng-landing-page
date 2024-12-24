@@ -215,6 +215,11 @@ body {
 @media screen and (max-width: 1178px) {
   .main-header .burger {
     display: block;
+    
+  }
+  .main-header .burger img{
+    width: 6rem;
+    height: 6rem;
   }
   .main-header .main-nav {
     display: none;
