@@ -152,7 +152,7 @@
 }
 
 .check-corona {
-  background: url(../../Assets/img/checkcovid/check-bg.jpg);
+  background: url(../Assets/img/checkcovid/check-bg.jpg);
   padding: 6.3rem 0;
 }
 .check-corona .check-covid {
@@ -230,7 +230,7 @@
 }
 
 .vaccine-reasons {
-  background: url(../../Assets/img/reasons/reasons-bg.jpg) no-repeat center/cover;
+  background: url(../Assets/img/reasons/reasons-bg.jpg) no-repeat center/cover;
   padding: 6.7rem 0 8rem 0;
 }
 .vaccine-reasons .vaccine-reason__content {
@@ -454,7 +454,7 @@
 }
 
 .symptoms {
-  background: url(../../Assets/img/symptoms/symptoms-bg.jpg) no-repeat center/cover;
+  background: url(../Assets/img/symptoms/symptoms-bg.jpg) no-repeat center/cover;
   padding-top: 6.7rem;
 }
 .symptoms .symptoms-content {
@@ -545,7 +545,7 @@
 }
 
 .feedback-section {
-  background: url(../../Assets/img/feedback/feedback-bg.jpg) no-repeat center/cover;
+  background: url(../Assets/img/feedback/feedback-bg.jpg) no-repeat center/cover;
 }
 .feedback-section .feedback-content {
   width: 90vw;
@@ -819,7 +819,7 @@
     width: 15rem;
   }
   .feedback-section {
-    background: url(../../Assets/img/feedback/feedback-bg-small.jpg) no-repeat center/cover;
+    background: url(../Assets/img/feedback/feedback-bg-small.jpg) no-repeat center/cover;
   }
   .feedback-section .feedback-content .customer-feedback {
     flex-direction: column;
@@ -861,7 +861,7 @@
     margin-bottom: 4rem;
   }
   .hero .hero-info .hero-content .hero-btn a {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
   .hero .hero-info .hero-content .hero-btn .hero-btn__primary,
   .hero .hero-info .hero-content .hero-btn .hero-btn__secondary {

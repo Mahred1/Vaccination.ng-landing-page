@@ -10,7 +10,7 @@ body{
     top: 0;
     left: 0;
     z-index: -2;
-    background:rgba(0, 0, 0, 1) url('../../Assets/img/front.jpg') no-repeat center/cover ;
+    background:rgba(0, 0, 0, 1) url(../Assets/img/front.jpg) no-repeat center/cover ;
 }
 // header section
 .main-header{
@@ -99,7 +99,7 @@ body{
 
 // footer section
 .main-footer{
-    background: url(../../Assets/img/footer/footer-bg.jpg) no-repeat center/cover;
+    background: url(../Assets/img/footer/footer-bg.jpg) no-repeat center/cover;
     padding: 32.8rem 0 12.8rem 0;
     .footer-content{
         width: 90vw;

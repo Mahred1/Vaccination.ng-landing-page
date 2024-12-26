@@ -9,7 +9,7 @@ body {
   top: 0;
   left: 0;
   z-index: -2;
-  background: rgb(0, 0, 0) url("../../Assets/img/front.jpg") no-repeat center/cover;
+  background: rgb(0, 0, 0) url(../Assets/img/front.jpg) no-repeat center/cover;
 }
 
 .main-header {
@@ -89,7 +89,7 @@ body {
 }
 
 .main-footer {
-  background: url(../../Assets/img/footer/footer-bg.jpg) no-repeat center/cover;
+  background: url(../Assets/img/footer/footer-bg.jpg) no-repeat center/cover;
   padding: 32.8rem 0 12.8rem 0;
 }
 .main-footer .footer-content {
@@ -215,11 +215,6 @@ body {
 @media screen and (max-width: 1178px) {
   .main-header .burger {
     display: block;
-    
-  }
-  .main-header .burger img{
-    width: 6rem;
-    height: 6rem;
   }
   .main-header .main-nav {
     display: none;
@@ -287,12 +282,12 @@ body {
 }
 @media screen and (max-width: 650px) {
   .main-header .burger img {
-    width: 5.5rem;
-    height: 5.5rem;
+    width: 4.5rem;
+    height: 4.5rem;
   }
   .main-header .logo h1 {
     margin-bottom: 0;
-    font-size: 2.3rem;
+    font-size: 1.8rem;
   }
   .main-footer {
     padding: 13.3rem 0 3rem 0;
@@ -403,12 +398,12 @@ body {
 }
 @media screen and (max-width: 375px) {
   .main-header .burger img {
-    width: 5.5rem;
-    height: 5.5rem;
+    width: 4.5rem;
+    height: 4.5rem;
   }
   .main-header .logo h1 {
     margin-bottom: 0;
-    font-size: 2.1rem;
+    font-size: 1.8rem;
   }
   .main-footer {
     padding: 13.3rem 0 3rem 0;
