@@ -15,7 +15,14 @@ let regHeader = document.querySelector(".registration-details h1");
 let hero = document.querySelector(".hero");
 let front = document.querySelector(".front");
 let mainHeader = document.querySelector(".main-header");
+let navItem = document.querySelectorAll(".main-nav-item");
 
+
+
+
+
+
+//Responsive front background
 let miniDesktop = window.matchMedia("(max-width: 1178px)");
 let heroStyle= window.getComputedStyle(hero);
 
@@ -28,6 +35,7 @@ function heroHeight(){
 
 }
 
+// Responsive components
 function responsivecomponents(x){
 
     if (x.matches) {
@@ -56,10 +64,22 @@ function responsivecomponents(x){
     }
 }
 
-
+// Resize Adjustment
 heroHeight();
 responsivecomponents(miniDesktop); 
 window.addEventListener("resize",()=>{
  responsivecomponents(miniDesktop); 
     heroHeight();
 })
+
+
+// active navigation 
+
+navItem.forEach(item => {
+    item.addEventListener("click",(e)=>{
+       if (!e.target.classList.contains("active")) {
+        document.querySelector(".active").classList.remove("active");
+        e.target.classList.add("active");
+       }
+    })
+});
