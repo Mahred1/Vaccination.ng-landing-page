@@ -59,6 +59,7 @@ body {
   color: rgba(255, 255, 255, 0.5);
   user-select: none;
   cursor: pointer;
+  transition: color 300ms ease, font-size 300ms ease, font-weight 0ms ease;
 }
 .main-header .main-nav .main-nav-items .main-nav-item a {
   color: rgba(255, 255, 255, 0.5);
@@ -81,6 +82,7 @@ body {
   width: 10px;
   border-radius: 50%;
   margin-top: 0.3rem;
+  animation: 270ms ease-in-out dot;
 }
 .main-header .main-nav .main-nav-items .active a {
   text-decoration: none;
@@ -480,6 +482,14 @@ body {
   .main-footer .footer-content .socialmedia a img {
     width: 1.8rem;
     height: 1.8rem;
+  }
+}
+@keyframes dot {
+  from {
+    transform: translate3d(0, -1rem, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
   }
 }
 
