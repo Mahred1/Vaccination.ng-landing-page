@@ -81,5 +81,6 @@ navItem.forEach(item => {
         document.querySelector(".active").classList.remove("active");
         e.target.classList.add("active");
        }
+       e.stopPropagation(); 
     })
 });

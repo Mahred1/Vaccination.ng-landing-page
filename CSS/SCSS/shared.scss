@@ -63,6 +63,11 @@ body{
                 color: $secondary-white;
                 user-select: none;
                 cursor: pointer;
+                a{
+                    color: $secondary-white;
+                    text-decoration: none;
+                    pointer-events: none; 
+                }
             }
             .active{
                 font-weight: 700;
@@ -80,6 +85,12 @@ body{
                     width: 10px;
                     border-radius: 50%;
                     margin-top: 0.3rem;
+
+                }
+                a{
+                    text-decoration: none;
+                    color: white !important;
+
 
                 }
             }

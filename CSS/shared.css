@@ -60,6 +60,11 @@ body {
   user-select: none;
   cursor: pointer;
 }
+.main-header .main-nav .main-nav-items .main-nav-item a {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  pointer-events: none;
+}
 .main-header .main-nav .main-nav-items .active {
   font-weight: 700;
   color: #ffffff;
@@ -76,6 +81,10 @@ body {
   width: 10px;
   border-radius: 50%;
   margin-top: 0.3rem;
+}
+.main-header .main-nav .main-nav-items .active a {
+  text-decoration: none;
+  color: white !important;
 }
 .main-header .nav-cta {
   padding: 2rem 2.6rem;
