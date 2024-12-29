@@ -15,7 +15,7 @@ let regHeader = document.querySelector(".registration-details h1");
 let hero = document.querySelector(".hero");
 let front = document.querySelector(".front");
 let mainHeader = document.querySelector(".main-header");
-let navItem = document.querySelectorAll(".main-nav-item");
+let navItem = document.querySelectorAll(".main-nav-item a");
 
 
 
@@ -77,9 +77,12 @@ window.addEventListener("resize",()=>{
 
 navItem.forEach(item => {
     item.addEventListener("click",(e)=>{
-       if (!e.target.classList.contains("active")) {
+       if (!e.target.parentElement.classList.contains("active")) {
         document.querySelector(".active").classList.remove("active");
-        e.target.classList.add("active");
+        if(e.target.parentElement.classList.contains("main-nav-item")){
+
+            e.target.parentElement.classList.add("active");
+        }
        }
        e.stopPropagation(); 
     })

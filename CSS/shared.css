@@ -19,9 +19,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 4rem;
+  padding-top: 2.1rem;
   position: sticky;
-  top: -1.5rem;
+  top: 0;
   z-index: 100;
 }
 .main-header .burger {
@@ -59,12 +59,11 @@ body {
   color: rgba(255, 255, 255, 0.5);
   user-select: none;
   cursor: pointer;
-  transition: color 300ms ease, font-size 300ms ease, font-weight 0ms ease;
+  transition: color 300ms ease, font-size 200ms ease;
 }
 .main-header .main-nav .main-nav-items .main-nav-item a {
   color: rgba(255, 255, 255, 0.5);
   text-decoration: none;
-  pointer-events: none;
 }
 .main-header .main-nav .main-nav-items .active {
   font-weight: 700;

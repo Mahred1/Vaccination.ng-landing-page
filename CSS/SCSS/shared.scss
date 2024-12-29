@@ -20,9 +20,9 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 4rem;
+    padding-top: 2.1rem;
     position: sticky;
-    top: -1.5rem;
+    top: 0; 
     z-index: 100;
     .burger{
         display: none;
@@ -63,11 +63,11 @@ body{
                 color: $secondary-white;
                 user-select: none;
                 cursor: pointer;
-                transition: color 300ms ease,font-size 300ms ease,font-weight 300ms ease;
+                transition: color 300ms ease,font-size 200ms ease;
                 a{
                     color: $secondary-white;
                     text-decoration: none;
-                    pointer-events: none; 
+                    // pointer-events: none; 
                 }
             }
             .active{
