@@ -24,6 +24,18 @@ body {
   top: 0;
   z-index: 100;
 }
+.main-header::before {
+  content: "";
+  background: linear-gradient(#1f2645, 75%, transparent);
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100vw;
+  min-height: 10vh;
+  padding-top: 2.1rem;
+  padding-bottom: 1rem;
+  z-index: -200;
+}
 .main-header .burger {
   display: none;
 }
