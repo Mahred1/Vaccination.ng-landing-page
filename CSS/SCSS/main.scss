@@ -31,6 +31,9 @@
                 
             }
             .hero-btn{
+                display:flex;
+                gap: 2rem; 
+                flex-wrap: wrap;
                 a{
                     color: $primary-white;
                     font-weight: 700;
@@ -45,7 +48,7 @@
                 }
                 .hero-btn__secondary{
                     background-color: $secondary-black;
-                    margin-left: 2rem;
+                    
                 }
 
             }
@@ -1059,8 +1062,8 @@
             .check-patient{
                 width: 90%;
                 input{
-                    min-width: 41rem;
-                    max-width: 28rem; 
+                    min-width: 26rem;
+                    max-width: 28rem;  
                     height: 5rem;
                     border-radius: 1rem;
                     &::placeholder{
@@ -1169,6 +1172,7 @@
                     width: 32.1rem;
                 }
                 .phone-field{min-width: fit-content;
+                    max-width: 31rem;
                     margin-bottom: 3rem;
                     flex-wrap: wrap;
                     .phone-number{
@@ -1177,6 +1181,9 @@
                         height: 5rem;
                         border-radius: 1rem;   
                         padding: 1.3rem 2rem 1rem 2rem;
+                        input{
+                            max-width: 80%;
+                        }
                     }
                     a{
                         border-radius: 1rem;
@@ -1309,8 +1316,11 @@
                         .customer-info{
                             p{
                                 font-size: 1rem;
+                                display: inline-block; 
+                                max-width: max-content;
                             }
                             h2{
+                                display: inline-block;
                                 font-size: 1.35rem;
                             }
                         }
@@ -1347,6 +1357,7 @@
 
                 }
                 .hero-btn{
+                    gap: 1.5rem;
                     a{
                         font-size: 1.4rem;
                     }

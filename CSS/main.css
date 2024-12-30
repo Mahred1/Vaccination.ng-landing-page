@@ -28,6 +28,11 @@
   max-width: 60rem;
   margin-bottom: 5rem;
 }
+.hero .hero-info .hero-content .hero-btn {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
 .hero .hero-info .hero-content .hero-btn a {
   color: #ffffff;
   font-weight: 700;
@@ -41,7 +46,6 @@
 }
 .hero .hero-info .hero-content .hero-btn .hero-btn__secondary {
   background-color: rgba(196, 196, 196, 0.1);
-  margin-left: 2rem;
 }
 .hero .hero-img {
   position: relative;
@@ -927,7 +931,7 @@
     width: 90%;
   }
   .check-corona .check-covid .check-patient input {
-    min-width: 41rem;
+    min-width: 26rem;
     max-width: 28rem;
     height: 5rem;
     border-radius: 1rem;
@@ -1028,6 +1032,7 @@
   }
   .registration .registration-content .registration-details .phone-field {
     min-width: fit-content;
+    max-width: 31rem;
     margin-bottom: 3rem;
     flex-wrap: wrap;
   }
@@ -1037,6 +1042,9 @@
     height: 5rem;
     border-radius: 1rem;
     padding: 1.3rem 2rem 1rem 2rem;
+  }
+  .registration .registration-content .registration-details .phone-field .phone-number input {
+    max-width: 80%;
   }
   .registration .registration-content .registration-details .phone-field a {
     border-radius: 1rem;
@@ -1155,8 +1163,11 @@
   }
   .feedback-section .feedback-content .customer-feedback .customer .profile .customer-info p {
     font-size: 1rem;
+    display: inline-block;
+    max-width: max-content;
   }
   .feedback-section .feedback-content .customer-feedback .customer .profile .customer-info h2 {
+    display: inline-block;
     font-size: 1.35rem;
   }
   .feedback-section .feedback-content .customer-feedback .customer p.customer-testimonial {
@@ -1184,6 +1195,9 @@
   }
   .hero .hero-info .hero-content p {
     margin-bottom: 4rem;
+  }
+  .hero .hero-info .hero-content .hero-btn {
+    gap: 1.5rem;
   }
   .hero .hero-info .hero-content .hero-btn a {
     font-size: 1.4rem;
