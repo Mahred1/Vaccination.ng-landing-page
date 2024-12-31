@@ -1066,6 +1066,9 @@
   .registration .registration-content .registration-details .reg-footer a {
     font-size: 1.4rem;
   }
+  .symptoms .symptoms-content {
+    overflow-x: hidden;
+  }
   .symptoms .symptoms-content h1 {
     margin-bottom: 1rem;
   }
