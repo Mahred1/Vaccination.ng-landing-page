@@ -46,7 +46,7 @@ body {
   width: 100vw;
   height: 100vh;
   background-color: #1f2645;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -260,6 +260,11 @@ body {
     width: 75vw;
   }
 }
+.open-mob {
+  display: flex !important;
+  animation: 500ms ease-in-out openNav;
+}
+
 @media screen and (max-width: 1178px) {
   .main-header .burger {
     display: block;
@@ -525,6 +530,14 @@ body {
   }
   to {
     transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes openNav {
+  from {
+    transform: translate3d(0, -100%, 0);
+  }
+  to {
+    transform: translate3d(0, 0%, 0);
   }
 }
 

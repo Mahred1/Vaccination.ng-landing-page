@@ -16,6 +16,8 @@ let hero = document.querySelector(".hero");
 let front = document.querySelector(".front");
 let mainHeader = document.querySelector(".main-header");
 let navItem = document.querySelectorAll(".main-nav-item a");
+let mobNav = document.querySelector(".mobile-nav");
+let burger = document.querySelector(".burger");
 
 
 
@@ -87,3 +89,9 @@ navItem.forEach(item => {
        e.stopPropagation(); 
     })
 });
+
+// Mobile Navigation
+
+burger.addEventListener("click",()=>{
+    mobNav.classList.toggle("open-mob");
+})
