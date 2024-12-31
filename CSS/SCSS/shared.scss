@@ -295,8 +295,12 @@ body{
 
 .open-mob{
     display: flex !important;
-    animation: 500ms ease-in-out openNav;  
+    animation: 500ms ease  openNav;  
 } 
+.close-mob{
+    display: flex !important;
+    animation: 500ms ease closeNav;
+}
 // medium desktop
 @media screen and (max-width: 1330px){
 
@@ -629,5 +633,12 @@ body{
         transform: translate3d(0,-100%,0);
     }to{
         transform: translate3d(0,0%,0); 
+    }
+}
+@keyframes closeNav{
+    from{
+        transform: translate3d(0,0%,0);
+    }to{
+        transform: translate3d(0,-100%,0); 
     }
 }

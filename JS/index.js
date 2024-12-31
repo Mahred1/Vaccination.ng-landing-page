@@ -93,5 +93,15 @@ navItem.forEach(item => {
 // Mobile Navigation
 
 burger.addEventListener("click",()=>{
-    mobNav.classList.toggle("open-mob");
+    if(mobNav.classList.contains("open-mob")){
+        mobNav.classList.add("close-mob");
+        mobNav.classList.remove("open-mob");
+        setTimeout(() => {
+            mobNav.classList.remove("close-mob");
+        }, 500);
+    }else{
+        mobNav.classList.remove("close-mob");
+        mobNav.classList.add("open-mob");
+
+    }
 })
