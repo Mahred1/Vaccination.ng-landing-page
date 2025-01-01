@@ -98,8 +98,8 @@ burger.addEventListener("click",()=>{
         mobNav.classList.remove("open-mob");
         setTimeout(() => {
             mobNav.classList.remove("close-mob");
-        }, 500);
-    }else{
+        }, 400);
+    }else{ 
         mobNav.classList.remove("close-mob");
         mobNav.classList.add("open-mob");
 
