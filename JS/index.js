@@ -85,7 +85,12 @@ navItem.forEach(item => {
         }
        }
        e.stopPropagation(); 
-    })
+
+       e.preventDefault();
+       let targetId = e.target.getAttribute('href');
+       let targetElement =document.querySelector(targetId);
+       targetElement.scrollIntoView({ behavior: "smooth",block: "center"});  
+    });
 });
 
 // Mobile Navigation
@@ -118,12 +123,31 @@ mobNavLink.forEach(link=>{
         }
         setTimeout(() => {
             mobNav.classList.add("close-mob"); 
-            mobNav.classList.remove("open-mob"); 
+            mobNav.classList.remove("open-mob");
+            burger.classList.remove("rotated"); 
          }, 300);
          setTimeout(() => {
             mobNav.classList.remove("close-mob"); 
-         }, 500);
-        
+         }, 400);
+       
+        e.preventDefault();
+       let targetId = e.target.getAttribute('href');
+       let targetElement =document.querySelector(targetId);
+       targetElement.scrollIntoView({ behavior: "smooth"}); 
+         
     })
+
+
 })
 
+// smmoth scroll
+document.querySelector(".nav-cta").addEventListener("click",(e)=>{
+    e.preventDefault();
+    console.log("e");
+    document.querySelector(".check-corona").scrollIntoView({behavior:"smooth", block: "center"});
+})  
+
+document.querySelector(".logo").addEventListener("click",(e)=>{
+    e.preventDefault();
+    e.target.scrollIntoView({behavior:"smooth",block:"end"});
+})
