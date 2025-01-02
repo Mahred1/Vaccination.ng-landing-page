@@ -17,10 +17,8 @@ let front = document.querySelector(".front");
 let mainHeader = document.querySelector(".main-header");
 let navItem = document.querySelectorAll(".main-nav-item a");
 let mobNav = document.querySelector(".mobile-nav");
+let mobNavLink = document.querySelectorAll(".mobile-nav a");
 let burger = document.querySelector(".burger");
-
-
-
 
 
 
@@ -105,3 +103,22 @@ burger.addEventListener("click",()=>{
 
     }
 })
+
+mobNavLink.forEach(link=>{
+    link.addEventListener("click",(e)=>{
+        if(!link.classList.contains("active-mob")){
+            document.querySelector(".active-mob").classList.remove("active-mob");
+            e.target.classList.add("active-mob"); 
+
+        }
+        setTimeout(() => {
+            mobNav.classList.add("close-mob"); 
+            mobNav.classList.remove("open-mob"); 
+         }, 300);
+         setTimeout(() => {
+            mobNav.classList.remove("close-mob"); 
+         }, 600);
+        
+    })
+})
+
