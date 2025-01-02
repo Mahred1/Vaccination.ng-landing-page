@@ -38,10 +38,15 @@ body{
     }
     .burger{
         display: none;
+        transition: transform 300ms ease-in-out;
+        transform-origin: center; 
+    }
+    .burger.rotated{
+        transform: rotate(20deg);
     }
    .mobile-nav{
     position: fixed;
-    top: 0;
+    top: 0; 
     left: 0;
     width: 100vw;
     height: 100vh; 
@@ -66,6 +71,9 @@ body{
   
    }
     .logo{ 
+        a{
+            text-decoration: none;
+        }
         h1{
             color: $primary-white;
             font-size: 3.2rem;

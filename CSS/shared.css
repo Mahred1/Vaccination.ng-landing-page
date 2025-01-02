@@ -38,6 +38,11 @@ body {
 }
 .main-header .burger {
   display: none;
+  transition: transform 300ms ease-in-out;
+  transform-origin: center;
+}
+.main-header .burger.rotated {
+  transform: rotate(20deg);
 }
 .main-header .mobile-nav {
   position: fixed;
@@ -62,6 +67,9 @@ body {
 .main-header .mobile-nav a.active-mob {
   color: #ffffff;
   font-size: 4rem;
+}
+.main-header .logo a {
+  text-decoration: none;
 }
 .main-header .logo h1 {
   color: #ffffff;

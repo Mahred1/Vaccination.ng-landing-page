@@ -90,7 +90,7 @@ navItem.forEach(item => {
 
 // Mobile Navigation
 
-burger.addEventListener("click",()=>{
+burger.addEventListener("click",(e)=>{
     if(mobNav.classList.contains("open-mob")){
         mobNav.classList.add("close-mob");
         mobNav.classList.remove("open-mob");
@@ -100,7 +100,12 @@ burger.addEventListener("click",()=>{
     }else{ 
         mobNav.classList.remove("close-mob");
         mobNav.classList.add("open-mob");
-
+        
+    }
+    if (!burger.classList.contains("rotated")) {
+        burger.classList.add("rotated");
+    } else {
+        burger.classList.remove("rotated");
     }
 })
 
@@ -117,7 +122,7 @@ mobNavLink.forEach(link=>{
          }, 300);
          setTimeout(() => {
             mobNav.classList.remove("close-mob"); 
-         }, 600);
+         }, 500);
         
     })
 })
