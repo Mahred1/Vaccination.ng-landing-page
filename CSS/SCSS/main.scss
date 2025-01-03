@@ -196,7 +196,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 2rem;
+            gap: 2rem;        
             input{
                 padding: 2rem 2.5rem;
                 border-radius: 2rem;
@@ -747,6 +747,13 @@
                 top: 38rem;
                 right: -36rem; 
             }
+        }
+    }
+   }
+   .check-corona{
+    .check-covid{
+        .check-patient{
+            flex-wrap: wrap;
         }
     }
    }

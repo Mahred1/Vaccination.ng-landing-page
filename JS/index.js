@@ -34,7 +34,9 @@ function heroHeight(){
     front.style.height=`${rect.height+rect2.height+marginBottom+marginTop}px`;
 
 }
-
+window.addEventListener("load",()=>{
+    heroHeight();
+});
 // Responsive components
 function responsivecomponents(x){
 
