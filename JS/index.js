@@ -19,7 +19,7 @@ let navItem = document.querySelectorAll(".main-nav-item a");
 let mobNav = document.querySelector(".mobile-nav");
 let mobNavLink = document.querySelectorAll(".mobile-nav a");
 let burger = document.querySelector(".burger");
-
+let footerNav = document.querySelectorAll(".footer-nav-item");
 
 
 //Responsive front background
@@ -150,4 +150,19 @@ document.querySelector(".nav-cta").addEventListener("click",(e)=>{
 document.querySelector(".logo").addEventListener("click",(e)=>{
     e.preventDefault();
     e.target.scrollIntoView({behavior:"smooth",block:"end"});
+})
+
+// footer navigation
+
+footerNav.forEach((link)=>{
+    link.addEventListener("click",(e)=>{
+        if (!e.target.classList.contains("active-foot")) {
+            document.querySelector(".active-foot").classList.remove("active-foot");
+            e.target.classList.add("active-foot");
+        }
+        e.preventDefault();
+        let targetId = e.target.getAttribute('href');
+        let targetElement =document.querySelector(targetId);
+        targetElement.scrollIntoView({ behavior: "smooth"}); 
+    })
 })
