@@ -351,6 +351,12 @@ body {
     width: 4.5rem;
     height: 4.5rem;
   }
+  .main-header .mobile-nav a {
+    font-size: 3rem;
+  }
+  .main-header .mobile-nav a.active-mob {
+    font-size: 3.2rem;
+  }
   .main-header .logo h1 {
     margin-bottom: 0;
     font-size: 1.8rem;
@@ -466,6 +472,12 @@ body {
   .main-header .burger img {
     width: 4.5rem;
     height: 4.5rem;
+  }
+  .main-header .mobile-nav a {
+    font-size: 2.4rem;
+  }
+  .main-header .mobile-nav a.active-mob {
+    font-size: 2.6rem;
   }
   .main-header .logo h1 {
     margin-bottom: 0;
