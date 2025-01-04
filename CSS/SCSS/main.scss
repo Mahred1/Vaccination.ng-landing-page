@@ -1,4 +1,19 @@
 @import "colors";
+// Loader
+.loader{
+    position: fixed;
+    z-index: 1000;
+    top:0;
+    left: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: #0e1b50;
+    display: grid;
+    place-content: center;
+    img{
+        width: 15rem;
+    }
+}
 // Hero section
 .hero{
     width: 90vw; 
@@ -94,7 +109,7 @@
                     left: 0;
                 }
                 &:nth-child(2){
-                    left: -0.5%;
+                    left: -0.5%; 
                 }
                 &:nth-child(3){
                     left: -1%;

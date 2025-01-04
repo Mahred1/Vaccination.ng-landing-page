@@ -1,3 +1,18 @@
+.loader {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: #0e1b50;
+  display: grid;
+  place-content: center;
+}
+.loader img {
+  width: 15rem;
+}
+
 .hero {
   width: 90vw;
   margin: auto;
@@ -689,6 +704,9 @@
   .symptoms .symptoms-content .symptoms-img .symptom-6 {
     top: 38rem;
     right: -36rem;
+  }
+  .check-corona .check-covid .check-patient {
+    flex-wrap: wrap;
   }
 }
 @media screen and (max-width: 1178px) {
