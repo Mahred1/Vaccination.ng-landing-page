@@ -11,8 +11,18 @@
 }
 .loader img {
   width: 15rem;
+  transform-origin: center;
+  animation: 700ms infinite alternate ease-in-out loader;
 }
 
+@keyframes loader {
+  0%, 50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
 .hero {
   width: 90vw;
   margin: auto;
