@@ -10,6 +10,8 @@
     background-color: #0e1b50;
     display: grid;
     place-content: center;
+    opacity:1;
+    transition: opacity 300ms ease-in-out;
     img{
         width: 15rem;
         transform-origin: center;

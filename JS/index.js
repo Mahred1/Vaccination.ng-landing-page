@@ -168,3 +168,12 @@ footerNav.forEach((link)=>{
         targetElement.scrollIntoView({ behavior: "smooth"}); 
     })
 })
+
+// Load animation
+window.addEventListener("load",()=>{
+    let loader= document.querySelector(".loader");
+    loader.style.opacity="0";
+    loader.addEventListener("transitionend",()=>{
+        loader.style.visibility= "hidden";
+    })
+})
