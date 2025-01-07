@@ -31,7 +31,7 @@ body{
         top: 0;
         left: 0;
         min-width: 100vw; 
-        min-height: 10vh;
+        min-height: 9vh;
         padding-top: 2.1rem;
         padding-bottom: 1rem;
         z-index: -200;
@@ -317,6 +317,9 @@ body{
 // mini desktop
 @media screen and (max-width: 1178px){
     .main-header{
+        &::before{
+            min-height: 7vh; 
+        }
         .burger{ 
             display: block;
         }
@@ -499,6 +502,11 @@ body{
     }
 }
 @media screen and (max-width: 520px){
+   .main-header{
+        &::before{
+            min-height: 6vh; 
+        }
+    }
     .main-footer{
         padding: 13.3rem 0 3rem 0;
         .quote{
