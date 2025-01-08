@@ -152,7 +152,7 @@ document.querySelector(".nav-cta").addEventListener("click",(e)=>{
 
 document.querySelector(".logo").addEventListener("click",(e)=>{
     e.preventDefault();
-    e.target.scrollIntoView({behavior:"smooth",block:"end"});
+    document.getElementById("front").scrollIntoView({behavior:"smooth"});
 })
 
 heroPrimary.addEventListener("click",(e)=>{
