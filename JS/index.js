@@ -20,7 +20,8 @@ let mobNav = document.querySelector(".mobile-nav");
 let mobNavLink = document.querySelectorAll(".mobile-nav a");
 let burger = document.querySelector(".burger");
 let footerNav = document.querySelectorAll(".footer-nav-item");
-
+let heroPrimary = document.querySelector(".hero-btn__primary");
+let heroSecondary = document.querySelector(".hero-btn__secondary");
 
 //Responsive front background
 let miniDesktop = window.matchMedia("(max-width: 1178px)");
@@ -154,6 +155,15 @@ document.querySelector(".logo").addEventListener("click",(e)=>{
     e.target.scrollIntoView({behavior:"smooth",block:"end"});
 })
 
+heroPrimary.addEventListener("click",(e)=>{
+    e.preventDefault();
+    document.getElementById("banner").scrollIntoView({behavior:"smooth",block:"center"});
+})
+
+heroSecondary.addEventListener("click",(e)=>{
+    e.preventDefault();
+    document.getElementById("quote").scrollIntoView({behavior:"smooth",block:"center"});
+})
 // footer navigation
 
 footerNav.forEach((link)=>{
