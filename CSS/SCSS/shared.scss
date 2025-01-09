@@ -3,6 +3,41 @@
 body{
     overflow-x: hidden; 
 }
+.coming-soon{
+    
+    background-color: $primary-white;
+    border-radius: 2rem;
+    width: 73rem;
+    height: 32rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 100;
+    color: #0B153C;
+    display:none; 
+    place-content: center; 
+    gap: 6rem;
+    padding-top: 6rem;
+    justify-items: center; 
+     button{
+        all: unset;
+        width: 14rem;
+        height: 5rem;
+        font-size: 2.2rem;
+        border-radius: 0.6rem;
+        background-color: rgba(255, 255, 255, 0.5);
+        border: 1px solid #212529;
+        cursor: pointer;
+        transition: background 25ms ease-in;
+        display: grid
+    ;
+        place-content: center;
+        &:hover{ 
+            background-color:  rgb(244, 244, 244); 
+        }
+     }
+}
 .front{
     position: absolute;
     width: 100%; 
