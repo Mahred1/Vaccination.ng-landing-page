@@ -4,9 +4,9 @@ body{
     overflow-x: hidden; 
 }
 .coming-soon{
-    
     background-color: $primary-white;
     border-radius: 2rem;
+    border: 1px solid $primary-light-blue;
     width: 73rem;
     height: 32rem;
     position: fixed;
@@ -14,7 +14,7 @@ body{
     left: 50%;
     transform: translate(-50%,-50%);
     z-index: 100;
-    color: #0B153C;
+    color: $primary-light-blue;
     display:none; 
     place-content: center; 
     gap: 6rem;
@@ -26,15 +26,16 @@ body{
         height: 5rem;
         font-size: 2.2rem;
         border-radius: 0.6rem;
-        background-color: rgba(255, 255, 255, 0.5);
-        border: 1px solid #212529;
+        background-color: $primary-light-blue;
+        border: 1px solid $primary-light-blue;
         cursor: pointer;
-        transition: background 25ms ease-in;
-        display: grid
-    ;
+        transition: background 200ms ease-in,color 200ms ease-in; 
+        display: grid;
         place-content: center;
+        color: $primary-white;
         &:hover{ 
             background-color:  rgb(244, 244, 244); 
+            color: $primary-light-blue;
         }
      }
 }
@@ -183,6 +184,7 @@ body{
         background-color: transparentize($secondary-white,0.4);
         border-radius: 2rem;
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        cursor: pointer;
         a{
             text-decoration: none;
             color: $primary-light-blue;

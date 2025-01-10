@@ -5,6 +5,7 @@ body {
 .coming-soon {
   background-color: #ffffff;
   border-radius: 2rem;
+  border: 1px solid #17c2ec;
   width: 73rem;
   height: 32rem;
   position: fixed;
@@ -12,7 +13,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 100;
-  color: #0B153C;
+  color: #17c2ec;
   display: none;
   place-content: center;
   gap: 6rem;
@@ -25,15 +26,17 @@ body {
   height: 5rem;
   font-size: 2.2rem;
   border-radius: 0.6rem;
-  background-color: rgba(255, 255, 255, 0.5);
-  border: 1px solid #212529;
+  background-color: #17c2ec;
+  border: 1px solid #17c2ec;
   cursor: pointer;
-  transition: background 25ms ease-in;
+  transition: background 200ms ease-in, color 200ms ease-in;
   display: grid;
   place-content: center;
+  color: #ffffff;
 }
 .coming-soon button:hover {
   background-color: rgb(244, 244, 244);
+  color: #17c2ec;
 }
 
 .front {
@@ -170,6 +173,7 @@ body {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 2rem;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
 }
 .main-header .nav-cta a {
   text-decoration: none;
