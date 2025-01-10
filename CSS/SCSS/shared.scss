@@ -3,6 +3,15 @@
 body{
     overflow-x: hidden; 
 }
+.back-drop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: transparentize($primary-black, 0.4);
+    display: none;
+}
 .coming-soon{
     background-color: $primary-white;
     border-radius: 2rem;
