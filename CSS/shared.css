@@ -9,7 +9,9 @@ body {
   min-width: 100vw;
   min-height: 100vh;
   background-color: rgba(33, 37, 41, 0.6);
-  display: non;
+  display: none;
+  z-index: 200;
+  user-select: none;
 }
 
 .coming-soon {
@@ -22,13 +24,14 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 100;
+  z-index: 250;
   color: #17c2ec;
   display: none;
   place-content: center;
   gap: 6rem;
   padding-top: 6rem;
   justify-items: center;
+  transition: all 200ms ease-in;
 }
 .coming-soon button {
   all: unset;
@@ -47,6 +50,10 @@ body {
 .coming-soon button:hover {
   background-color: rgb(244, 244, 244);
   color: #17c2ec;
+}
+
+.open-modal {
+  display: grid !important;
 }
 
 .front {

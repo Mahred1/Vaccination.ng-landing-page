@@ -22,6 +22,8 @@ let burger = document.querySelector(".burger");
 let footerNav = document.querySelectorAll(".footer-nav-item");
 let heroPrimary = document.querySelector(".hero-btn__primary");
 let heroSecondary = document.querySelector(".hero-btn__secondary");
+let comingSoon = document.querySelector(".coming-soon");
+let backDrop =document.querySelector(".back-drop");
 
 //Responsive front background
 let miniDesktop = window.matchMedia("(max-width: 1178px)");
@@ -186,4 +188,23 @@ window.addEventListener("load",()=>{
     loader.addEventListener("transitionend",()=>{
         loader.style.visibility= "hidden";
     })
+})
+
+// modal interactions
+
+submitBanner.addEventListener("click",(e)=>{
+    e.preventDefault();
+    comingSoon.classList.add("open-modal");
+    backDrop.classList.add("open-modal");
+
+})
+
+backDrop.addEventListener("click",(e)=>{
+    comingSoon.classList.remove("open-modal");
+    backDrop.classList.remove("open-modal");
+
+})
+document.querySelector(".coming-soon button").addEventListener("click",()=>{
+    comingSoon.classList.remove("open-modal");
+    backDrop.classList.remove("open-modal");
 })

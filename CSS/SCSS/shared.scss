@@ -10,7 +10,9 @@ body{
     min-width: 100vw;
     min-height: 100vh;
     background-color: transparentize($primary-black, 0.4);
-    display: none;
+    display: none; 
+    z-index: 200;
+    user-select: none;
 }
 .coming-soon{
     background-color: $primary-white;
@@ -22,13 +24,14 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    z-index: 100;
+    z-index: 250;;
     color: $primary-light-blue;
     display:none; 
     place-content: center; 
     gap: 6rem;
     padding-top: 6rem;
     justify-items: center; 
+    transition: all 200ms ease-in;
      button{
         all: unset;
         width: 14rem;
@@ -48,6 +51,10 @@ body{
         }
      }
 }
+.open-modal{
+    display: grid !important;
+}
+
 .front{
     position: absolute;
     width: 100%; 
