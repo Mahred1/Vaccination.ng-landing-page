@@ -196,7 +196,7 @@ submitBanner.addEventListener("click",(e)=>{
     e.preventDefault();
     comingSoon.classList.add("open-modal");
     backDrop.classList.add("open-modal");
-    gsap.from(comingSoon,{scale:"0"});
+    gsap.to(comingSoon,{scale:"1"});
 })
 
 backDrop.addEventListener("click",(e)=>{
@@ -209,9 +209,9 @@ backDrop.addEventListener("click",(e)=>{
 
 })
 document.querySelector(".coming-soon button").addEventListener("click",()=>{
+    gsap.fromTo(comingSoon,{scale:"1"},{scale:"0"});
     comingSoon.classList.remove("open-modal");
     backDrop.classList.remove("open-modal");
-    gsap.fromTo(comingSoon,{scale:"1"},{scale:"0"});
 
 })
 
