@@ -26,7 +26,7 @@ body {
   translate: none;
   rotate: none;
   scale: none;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) translate(-0.078px, -0.213px) scale(0, 0);
   z-index: 250;
   color: #17c2ec;
   display: none;
