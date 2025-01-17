@@ -54,6 +54,43 @@ body{
         }
      }
 }
+.success{
+    background-color: $primary-white;
+    border-radius: 2rem;
+    border: 1px solid $primary-light-blue;
+    width: 73rem;
+    height: 32rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 250;;
+    color: rgb(0, 227, 0);
+    display:grid; 
+    place-content: center; 
+    gap: 6rem;
+    padding-top: 6rem;
+    justify-items: center; 
+    transition: all 200ms ease-in;
+     button{
+        all: unset;
+        width: 14rem;
+        height: 5rem;
+        font-size: 2.2rem;
+        border-radius: 0.6rem;
+        background-color: rgb(0, 227, 0);
+        border: 1px solid rgb(0, 227, 0);
+        cursor: pointer;
+        transition: background 200ms ease-in,color 200ms ease-in; 
+        display: grid;
+        place-content: center;
+        color: $primary-white;
+        &:hover{ 
+            background-color:  rgb(244, 244, 244); 
+            color: rgb(0, 227, 0);
+        }
+     }
+}
 .open-modal{
     display: grid !important;
 }
