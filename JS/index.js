@@ -24,6 +24,8 @@ let heroPrimary = document.querySelector(".hero-btn__primary");
 let heroSecondary = document.querySelector(".hero-btn__secondary");
 let comingSoon = document.querySelector(".coming-soon");
 let backDrop =document.querySelector(".back-drop");
+let checkPatient =document.querySelector(".check-patient a");
+let success= document.querySelector(".success");
 
 //Responsive front background
 let miniDesktop = window.matchMedia("(max-width: 1178px)");
@@ -202,7 +204,9 @@ submitBanner.addEventListener("click",(e)=>{
 backDrop.addEventListener("click",(e)=>{
     
     gsap.fromTo(comingSoon,{scale:"1"},{scale:"0",duration:"320ms"});
+    gsap.fromTo(success,{scale:"1"},{scale:"0",duration:"320ms"});
         comingSoon.classList.remove("open-modal");
+        success.classList.remove("open-modal"); 
         backDrop.classList.remove("open-modal"); 
 
 
@@ -211,6 +215,19 @@ backDrop.addEventListener("click",(e)=>{
 document.querySelector(".coming-soon button").addEventListener("click",()=>{
     gsap.fromTo(comingSoon,{scale:"1"},{scale:"0",duration:"320ms"});
     comingSoon.classList.remove("open-modal");
+    backDrop.classList.remove("open-modal");
+
+})
+
+checkPatient.addEventListener("click",(e)=>{
+    e.preventDefault();
+    success.classList.add("open-modal");
+    backDrop.classList.add("open-modal");
+    gsap.to(success,{scale:"1",duration:"320ms"});
+})
+document.querySelector(".success button").addEventListener("click",()=>{
+    gsap.fromTo(success,{scale:"1"},{scale:"0",duration:"320ms"});
+    success.classList.remove("open-modal");
     backDrop.classList.remove("open-modal");
 
 })
