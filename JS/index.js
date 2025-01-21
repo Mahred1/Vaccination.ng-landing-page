@@ -26,6 +26,7 @@ let comingSoon = document.querySelector(".coming-soon");
 let backDrop =document.querySelector(".back-drop");
 let checkPatient =document.querySelector(".check-patient a");
 let success= document.querySelector(".success");
+let errorModal =document.querySelector(".error");
 
 //Responsive front background
 let miniDesktop = window.matchMedia("(max-width: 1178px)");
@@ -205,8 +206,10 @@ backDrop.addEventListener("click",(e)=>{
     
     gsap.fromTo(comingSoon,{scale:"1"},{scale:"0",duration:"320ms"});
     gsap.fromTo(success,{scale:"1"},{scale:"0",duration:"320ms"});
+    gsap.fromTo(errorModal,{scale:"1"},{scale:"0",duration:"320ms"});
         comingSoon.classList.remove("open-modal");
         success.classList.remove("open-modal"); 
+        errorModal.classList.remove("open-modal"); 
         backDrop.classList.remove("open-modal"); 
 
 
@@ -221,15 +224,39 @@ document.querySelector(".coming-soon button").addEventListener("click",()=>{
 
 checkPatient.addEventListener("click",(e)=>{
     e.preventDefault();
-    success.classList.add("open-modal");
+
+    if (  document.querySelectorAll(".check-patient input")[0].value.trim()==="" 
+            &&
+        document.querySelectorAll(".check-patient input")[1].value.trim()===""  ) {
+            console.log("true");
+        errorModal.classList.add("open-modal");
+        gsap.to(errorModal,{scale:"1",duration:"320ms"});
+    }else{
+        console.log("false");
+
+        success.classList.add("open-modal");
+        gsap.to(success,{scale:"1",duration:"320ms"});
+    }
+    
     backDrop.classList.add("open-modal");
-    gsap.to(success,{scale:"1",duration:"320ms"});
+   
 })
+
+
 document.querySelector(".success button").addEventListener("click",()=>{
     gsap.fromTo(success,{scale:"1"},{scale:"0",duration:"320ms"});
     success.classList.remove("open-modal");
     backDrop.classList.remove("open-modal");
 
 })
+document.querySelector(".error button").addEventListener("click",()=>{
+    gsap.fromTo(errorModal,{scale:"1"},{scale:"0",duration:"320ms"});
+    errorModal.classList.remove("open-modal");
+    backDrop.classList.remove("open-modal");
+
+})
+
+
+
 
 
