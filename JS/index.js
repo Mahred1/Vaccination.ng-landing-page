@@ -27,6 +27,8 @@ let backDrop =document.querySelector(".back-drop");
 let checkPatient =document.querySelector(".check-patient a");
 let success= document.querySelector(".success");
 let errorModal =document.querySelector(".error");
+let phoneVerify = document.querySelector(".phone-ver");
+let submitReg =document.querySelector(".submit-reg");
 
 //Responsive front background
 let miniDesktop = window.matchMedia("(max-width: 1178px)");
@@ -228,12 +230,10 @@ checkPatient.addEventListener("click",(e)=>{
     if (  document.querySelectorAll(".check-patient input")[0].value.trim()==="" 
             &&
         document.querySelectorAll(".check-patient input")[1].value.trim()===""  ) {
-            console.log("true");
+            
         errorModal.classList.add("open-modal");
         gsap.to(errorModal,{scale:"1",duration:"320ms"});
     }else{
-        console.log("false");
-
         success.classList.add("open-modal");
         gsap.to(success,{scale:"1",duration:"320ms"});
     }
@@ -243,6 +243,29 @@ checkPatient.addEventListener("click",(e)=>{
 })
 
 
+phoneVerify.addEventListener("click",(e)=>{
+    e.preventDefault();
+    if (document.querySelector(".phone-number input").value ==="") {
+        errorModal.classList.add("open-modal");
+        gsap.to(errorModal,{scale:"1",duration:"320ms"});
+    } else {
+        success.classList.add("open-modal");
+        gsap.to(success,{scale:"1",duration:"320ms"});
+    }
+    backDrop.classList.add("open-modal");
+})
+
+submitReg.addEventListener("click",(e)=>{
+    e.preventDefault();
+    if (document.querySelector(".phone-number input").value !=="" && document.querySelector(".full-name").value !=="") {
+        success.classList.add("open-modal");
+        gsap.to(success,{scale:"1",duration:"320ms"});
+    }else{
+        errorModal.classList.add("open-modal");
+        gsap.to(errorModal,{scale:"1",duration:"320ms"});
+    }
+    backDrop.classList.add("open-modal");
+})
 document.querySelector(".success button").addEventListener("click",()=>{
     gsap.fromTo(success,{scale:"1"},{scale:"0",duration:"320ms"});
     success.classList.remove("open-modal");
@@ -255,6 +278,7 @@ document.querySelector(".error button").addEventListener("click",()=>{
     backDrop.classList.remove("open-modal");
 
 })
+
 
 
 
