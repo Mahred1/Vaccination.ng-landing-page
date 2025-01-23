@@ -29,6 +29,7 @@ let success= document.querySelector(".success");
 let errorModal =document.querySelector(".error");
 let phoneVerify = document.querySelector(".phone-ver");
 let submitReg =document.querySelector(".submit-reg");
+let regCheck = document.querySelector(".reg-footer a");
 
 //Responsive front background
 let miniDesktop = window.matchMedia("(max-width: 1178px)");
@@ -170,6 +171,10 @@ heroPrimary.addEventListener("click",(e)=>{
 heroSecondary.addEventListener("click",(e)=>{
     e.preventDefault();
     document.getElementById("quote").scrollIntoView({behavior:"smooth",block:"center"});
+})
+regCheck.addEventListener("click",(e)=>{
+    e.preventDefault();
+    document.querySelector(".check-corona").scrollIntoView({behavior:"smooth",block:"center"})
 })
 // footer navigation
 
