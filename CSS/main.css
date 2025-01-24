@@ -9,7 +9,7 @@
   display: grid;
   place-content: center;
   opacity: 1;
-  transition: opacity 400ms ease-in-out;
+  transition: opacity 300ms ease-in-out;
 }
 .loader img {
   width: 15rem;
@@ -874,6 +874,12 @@
   }
 }
 @media screen and (max-width: 650px) {
+  h2 {
+    font-size: 1.8rem;
+  }
+  p {
+    font-size: 1.6re;
+  }
   .hero {
     margin-top: 2rem;
   }

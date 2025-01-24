@@ -990,6 +990,12 @@
 }
 // mobile
 @media screen and (max-width: 650px){ 
+    h2{
+        font-size: 1.8rem;
+    } 
+    p{
+        font-size: 1.6rem;
+    }
     .hero{
         .banner-icon{
             width: 3.5rem;
