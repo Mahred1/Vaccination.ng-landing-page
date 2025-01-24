@@ -232,15 +232,15 @@ document.querySelector(".coming-soon button").addEventListener("click",()=>{
 checkPatient.addEventListener("click",(e)=>{
     e.preventDefault();
 
-    if (  document.querySelectorAll(".check-patient input")[0].value.trim()==="" 
+    if (  document.querySelectorAll(".check-patient input")[0].value.trim()!=="" 
             &&
-        document.querySelectorAll(".check-patient input")[1].value.trim()===""  ) {
-            
-        errorModal.classList.add("open-modal");
-        gsap.to(errorModal,{scale:"1",duration:"320ms"});
-    }else{
+        document.querySelectorAll(".check-patient input")[1].value.trim()!==""  ) {
         success.classList.add("open-modal");
-        gsap.to(success,{scale:"1",duration:"320ms"});
+        gsap.to(success,{scale:"1",duration:"320ms"});    
+      
+    }else{
+          errorModal.classList.add("open-modal");
+        gsap.to(errorModal,{scale:"1",duration:"320ms"});
     }
     
     backDrop.classList.add("open-modal");
