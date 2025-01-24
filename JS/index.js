@@ -31,6 +31,7 @@ let phoneVerify = document.querySelector(".phone-ver");
 let submitReg =document.querySelector(".submit-reg");
 let regCheck = document.querySelector(".reg-footer a");
 let sendEmail =document.querySelector(".quote-email img");
+let readMore = document.querySelectorAll(".reasons-read__more");
 
 //Responsive front background
 let miniDesktop = window.matchMedia("(max-width: 1178px)");
@@ -282,6 +283,15 @@ sendEmail.addEventListener("click",()=>{
         gsap.to(errorModal,{scale:"1",duration:"320ms"});
     }
     backDrop.classList.add("open-modal");
+})
+
+readMore.forEach(item=>{
+    item.addEventListener("click",(e)=>{
+        e.preventDefault();
+        comingSoon.classList.add("open-modal");
+        backDrop.classList.add("open-modal");
+        gsap.to(comingSoon,{scale:"1",duration:"320ms"});
+    })
 })
 document.querySelector(".success button").addEventListener("click",()=>{
     gsap.fromTo(success,{scale:"1"},{scale:"0",duration:"320ms"});
