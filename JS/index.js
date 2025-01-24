@@ -30,6 +30,7 @@ let errorModal =document.querySelector(".error");
 let phoneVerify = document.querySelector(".phone-ver");
 let submitReg =document.querySelector(".submit-reg");
 let regCheck = document.querySelector(".reg-footer a");
+let sendEmail =document.querySelector(".quote-email img");
 
 //Responsive front background
 let miniDesktop = window.matchMedia("(max-width: 1178px)");
@@ -263,6 +264,17 @@ phoneVerify.addEventListener("click",(e)=>{
 submitReg.addEventListener("click",(e)=>{
     e.preventDefault();
     if (document.querySelector(".phone-number input").value !=="" && document.querySelector(".full-name").value !=="") {
+        success.classList.add("open-modal");
+        gsap.to(success,{scale:"1",duration:"320ms"});
+    }else{
+        errorModal.classList.add("open-modal");
+        gsap.to(errorModal,{scale:"1",duration:"320ms"});
+    }
+    backDrop.classList.add("open-modal");
+})
+ 
+sendEmail.addEventListener("click",()=>{
+    if (document.querySelector(".quote-email input").value.trim()!=="") {
         success.classList.add("open-modal");
         gsap.to(success,{scale:"1",duration:"320ms"});
     }else{
