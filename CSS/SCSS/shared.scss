@@ -522,6 +522,10 @@ body{
 
 // tablet
 @media screen and (max-width: 768px){
+    .open-modal{
+        width: 61rem;
+        height: 30rem;
+    }
     .main-footer{
         .quote{
             width: 65.9rem;
@@ -542,6 +546,10 @@ body{
 }
 
 @media screen and (max-width: 650px){
+    .open-modal{
+        width: 50rem;
+        height: 28rem;
+    }
     .main-header{
         .burger{
             img{
@@ -640,6 +648,18 @@ body{
     }
 }
 @media screen and (max-width: 520px){
+    .open-modal{
+        width: 42rem;
+        height: 25rem;
+        h1{
+            font-size: 2.6rem;
+        }
+        button{
+            width: 12rem;
+            height: 4rem;
+            font-size: 1.8rem;
+        }
+    }
    .main-header{
         &::before{
             min-height: 6vh; 
@@ -690,6 +710,10 @@ body{
 }
 // mobile
 @media screen and (max-width: 375px){ 
+    .open-modal{
+        width: 42rem;
+        height: 25rem;
+    }
     .main-header{
         .burger{
             img{

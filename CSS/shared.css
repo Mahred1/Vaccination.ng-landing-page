@@ -476,6 +476,10 @@ body {
   }
 }
 @media screen and (max-width: 768px) {
+  .open-modal {
+    width: 61rem;
+    height: 30rem;
+  }
   .main-footer .quote {
     width: 65.9rem;
     height: 26.3rem;
@@ -491,6 +495,10 @@ body {
   }
 }
 @media screen and (max-width: 650px) {
+  .open-modal {
+    width: 50rem;
+    height: 28rem;
+  }
   .main-header .burger img {
     width: 4.5rem;
     height: 4.5rem;
@@ -572,6 +580,18 @@ body {
   }
 }
 @media screen and (max-width: 520px) {
+  .open-modal {
+    width: 42rem;
+    height: 25rem;
+  }
+  .open-modal h1 {
+    font-size: 2.6rem;
+  }
+  .open-modal button {
+    width: 12rem;
+    height: 4rem;
+    font-size: 1.8rem;
+  }
   .main-header::before {
     min-height: 6vh;
   }
@@ -616,6 +636,10 @@ body {
   }
 }
 @media screen and (max-width: 375px) {
+  .open-modal {
+    width: 42rem;
+    height: 25rem;
+  }
   .main-header .burger img {
     width: 4.5rem;
     height: 4.5rem;
