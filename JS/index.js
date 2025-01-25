@@ -1,3 +1,20 @@
+// lenis setup code with scroll trigger
+const lenis = new Lenis()
+
+lenis.on('scroll', (e) => {
+  console.log(e)
+})
+
+lenis.on('scroll', ScrollTrigger.update)
+
+gsap.ticker.add((time)=>{
+  lenis.raf(time * 1000)
+})
+
+gsap.ticker.lagSmoothing(0)
+
+
+
 let bannerItems= document.querySelector(".banner-items");
 let submitBanner= document.querySelector(".submit-banner");
 let banner= document.querySelector(".banner");
