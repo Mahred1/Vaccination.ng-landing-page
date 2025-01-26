@@ -2,7 +2,7 @@
 const lenis = new Lenis()
 
 lenis.on('scroll', (e) => {
-  console.log(e)
+  
 })
 
 lenis.on('scroll', ScrollTrigger.update)
@@ -340,7 +340,8 @@ function animations(){
     heroTl.from(Img,{scale:0},"-=0.2")
    });
 
-   heroTl.from(banner,{yPercent:100,opacity:0},">-0.85")
+   heroTl.from(banner,{yPercent:100,opacity:0},">-0.8");
+   heroTl.from(".banner-title",{opacity:0},">-0.5");
 
    heroCont.forEach(content => {
     if(content.nodeType===1){
