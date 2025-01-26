@@ -600,6 +600,12 @@ body {
   }
 }
 @media screen and (max-width: 520px) {
+  h1 {
+    font-size: 2.8rem;
+  }
+  p {
+    font-size: 1.6rem;
+  }
   .open-modal {
     width: 42rem;
     height: 25rem;

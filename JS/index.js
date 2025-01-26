@@ -63,6 +63,7 @@ function heroHeight(){
 
 }
 window.addEventListener("load",()=>{
+    animations();
     heroHeight();
 });
 // Responsive components
@@ -325,6 +326,31 @@ document.querySelector(".error button").addEventListener("click",()=>{
 
 
 
+function animations(){
+    let heroImg = document.querySelectorAll(".hero-img div");
+    let heroCont = document.querySelector(".hero-content").childNodes;
 
+   let heroTl = gsap.timeline({
+    duration: 0.35
+   })
+
+   heroTl.from(mainHeader,{yPercent:-100})
+
+   heroImg.forEach(Img => {
+    heroTl.from(Img,{scale:0},"-=0.2")
+   });
+
+   heroTl.from(banner,{yPercent:100,opacity:0},">-0.85")
+
+   heroCont.forEach(content => {
+    if(content.nodeType===1){
+        console.log(content)
+        heroTl.from(content,{yPercent:-100,opacity:0},"-=1.5")
+    }
+   });
+   
+
+
+}
 
 
