@@ -344,7 +344,6 @@ function animations(){
 
    heroCont.forEach(content => {
     if(content.nodeType===1){
-        console.log(content)
         heroTl.from(content,{yPercent:-100,opacity:0},"-=1.5")
     }
    });
