@@ -344,7 +344,7 @@ function animations(){
    });
 
    partnerAmin();
-
+   checkAnim();
 
 
    
@@ -413,6 +413,21 @@ function partnerAmin(){
         console.log(logo)
         partnerTl.from(logo,{opacity:0,scale:0},"<")
      });
+}
+
+function checkAnim(){
+    const checkSec = document.querySelector(".check-corona");
+     let checkTl =gsap.timeline();
+
+     ScrollTrigger.create({
+        trigger: checkSec,
+        start: 'top 95%',
+        end:'bottom 95%',
+        animation:checkTl,
+        scrub:true
+     })
+
+     checkTl.from(".check-covid",{opacity:0,yPercent:80,scale:0.8})
 }
 
 
