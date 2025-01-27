@@ -8,7 +8,7 @@ lenis.on('scroll', (e) => {
 lenis.on('scroll', ScrollTrigger.update)
 
 gsap.ticker.add((time)=>{
-  lenis.raf(time * 1000)
+  lenis.raf(time * 3000)
 })
 
 gsap.ticker.lagSmoothing(0)
@@ -345,9 +345,8 @@ function animations(){
 
    partnerAmin();
    checkAnim();
+   reasonAnim();
 
-
-   
 }
 
 scrollNavs();
@@ -428,6 +427,33 @@ function checkAnim(){
      })
 
      checkTl.from(".check-covid",{opacity:0,yPercent:80,scale:0.8})
+}
+
+function reasonAnim(){
+    const reasonSec = document.querySelector(".vaccine-reasons");
+    const reasonHeadingP = document.querySelectorAll(".vaccine-reasons__heading p");
+    const reasonHeading = document.querySelectorAll(".vaccine-reasons__heading h1");
+    const reasonCards= document.querySelectorAll(".vaccine-cards>div");
+
+    const reasonTl = gsap.timeline({duration:'5000ms'});
+
+    ScrollTrigger.create({
+        trigger: reasonSec,
+        start: 'top 95%',
+        end:'bottom 95%',
+        markers:true,
+        scrub:true,
+        reverse:false,
+        animation:reasonTl
+    })
+
+    reasonTl.from(reasonHeading,{opacity:0,yPercent:-100,xPercent:-100,xPercent:-50});
+    reasonTl.from(reasonHeadingP,{opacity:0,yPercent:-100,xPercent:-100,xPercent:50},"<");
+
+    reasonCards.forEach(card => {
+        reasonTl.from(card,{xPercent:-100,opacity:0})
+    });
+    
 }
 
 
