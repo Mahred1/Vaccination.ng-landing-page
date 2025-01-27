@@ -382,6 +382,12 @@ function scrollNavs(){
                     nav.classList.add("active");
                 }
              }
+            //  for footer nav
+
+            if(secId==="quote"){
+                document.querySelector(".active-foot").classList.remove("active-foot");
+                document.getElementById("contact-foot").classList.add("active-foot");
+            }
             })
             
         }
