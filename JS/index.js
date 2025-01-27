@@ -327,6 +327,7 @@ document.querySelector(".error button").addEventListener("click",()=>{
 
 
 function animations(){
+    // hero section
     let heroImg = document.querySelectorAll(".hero-img div");
     let heroCont = document.querySelector(".hero-content").childNodes;
 
@@ -349,8 +350,43 @@ function animations(){
     }
    });
    
+}
 
+scrollNavs();
 
+function scrollNavs(){
+    let sections= document.querySelectorAll("section");
+    
+    sections.forEach(section=>{
+        secTl = gsap.timeline();
+        ScrollTrigger.create({
+            trigger: section,
+            start: 'top 85%',
+            end: 'bottom bottom',
+            markers: true,
+            animation: secTl,
+            scrub: true,
+            onToggle: self => activateNav()
+        })
+
+        function activateNav(){
+            let secId= section.getAttribute("id");
+            let navs = document.querySelectorAll(".main-nav-item");
+
+            navs.forEach(nav=>{
+             let navLoc = nav.getAttribute("location");
+
+             if (secId !== null) {
+                if (secId===navLoc && !nav.classList.contains("active")) {
+                    document.querySelector(".active").classList.remove("active");
+                    nav.classList.add("active");
+                }
+             }
+            })
+            
+        }
+      
+    })
 }
 
 
