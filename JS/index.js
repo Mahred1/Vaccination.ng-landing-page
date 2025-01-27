@@ -15,40 +15,40 @@ gsap.ticker.lagSmoothing(0)
 
 
 
-let bannerItems= document.querySelector(".banner-items");
-let submitBanner= document.querySelector(".submit-banner");
-let banner= document.querySelector(".banner");
-let myLocation = document.querySelector(".location");
-let date = document.querySelector(".date");
-let vaccine = document.querySelector(".vaccine");
-let row1= document.querySelector(".row1");
-let row2= document.querySelector(".row2");
-let smallCards =document.querySelector(".minidesktop-cards");
-let card2 =document.querySelector(".card-2");
-let card3 =document.querySelector(".card-3");
-let regContent = document.querySelector(".registration-content");
-let regDetail = document.querySelector(".registration-details");
-let regHeader = document.querySelector(".registration-details h1");
-let hero = document.querySelector(".hero");
-let front = document.querySelector(".front");
-let mainHeader = document.querySelector(".main-header");
-let navItem = document.querySelectorAll(".main-nav-item a");
-let mobNav = document.querySelector(".mobile-nav");
-let mobNavLink = document.querySelectorAll(".mobile-nav a");
-let burger = document.querySelector(".burger");
-let footerNav = document.querySelectorAll(".footer-nav-item");
-let heroPrimary = document.querySelector(".hero-btn__primary");
-let heroSecondary = document.querySelector(".hero-btn__secondary");
-let comingSoon = document.querySelector(".coming-soon");
-let backDrop =document.querySelector(".back-drop");
-let checkPatient =document.querySelector(".check-patient a");
-let success= document.querySelector(".success");
-let errorModal =document.querySelector(".error");
-let phoneVerify = document.querySelector(".phone-ver");
-let submitReg =document.querySelector(".submit-reg");
-let regCheck = document.querySelector(".reg-footer a");
-let sendEmail =document.querySelector(".quote-email img");
-let readMore = document.querySelectorAll(".reasons-read__more");
+const bannerItems= document.querySelector(".banner-items");
+const submitBanner= document.querySelector(".submit-banner");
+const banner= document.querySelector(".banner");
+const myLocation = document.querySelector(".location");
+const date = document.querySelector(".date");
+const vaccine = document.querySelector(".vaccine");
+const row1= document.querySelector(".row1");
+const row2= document.querySelector(".row2");
+const smallCards =document.querySelector(".minidesktop-cards");
+const card2 =document.querySelector(".card-2");
+const card3 =document.querySelector(".card-3");
+const regContent = document.querySelector(".registration-content");
+const regDetail = document.querySelector(".registration-details");
+const regHeader = document.querySelector(".registration-details h1");
+const hero = document.querySelector(".hero");
+const front = document.querySelector(".front");
+const mainHeader = document.querySelector(".main-header");
+const navItem = document.querySelectorAll(".main-nav-item a");
+const mobNav = document.querySelector(".mobile-nav");
+const mobNavLink = document.querySelectorAll(".mobile-nav a");
+const burger = document.querySelector(".burger");
+const footerNav = document.querySelectorAll(".footer-nav-item");
+const heroPrimary = document.querySelector(".hero-btn__primary");
+const heroSecondary = document.querySelector(".hero-btn__secondary");
+const comingSoon = document.querySelector(".coming-soon");
+const backDrop =document.querySelector(".back-drop");
+const checkPatient =document.querySelector(".check-patient a");
+const success= document.querySelector(".success");
+const errorModal =document.querySelector(".error");
+const phoneVerify = document.querySelector(".phone-ver");
+const submitReg =document.querySelector(".submit-reg");
+const regCheck = document.querySelector(".reg-footer a");
+const sendEmail =document.querySelector(".quote-email img");
+const readMore = document.querySelectorAll(".reasons-read__more");
 
 //Responsive front background
 let miniDesktop = window.matchMedia("(max-width: 1178px)");
@@ -342,6 +342,11 @@ function animations(){
         heroTl.from(content,{yPercent:-100,opacity:0},"-=1.5")
     }
    });
+
+   partnerAmin();
+
+
+
    
 }
 
@@ -356,7 +361,6 @@ function scrollNavs(){
             trigger: section,
             start: 'top 85%',
             end: 'bottom bottom',
-            markers: true,
             animation: secTl,
             scrub: true,
             onToggle: self => activateNav()
@@ -367,7 +371,6 @@ function scrollNavs(){
             let navs = document.querySelectorAll(".main-nav-item");
 
             navs.forEach(nav=>{
-                console.log(nav)
              let navLoc = nav.getAttribute("location");
             
              if (secId !== null && secId===navLoc) {
@@ -392,6 +395,24 @@ function scrollNavs(){
         }
       
     })
+}
+
+function partnerAmin(){
+    const partnerSec = document.querySelector(".partners-section");
+    let partnerTl = gsap.timeline();
+
+    ScrollTrigger.create({
+        trigger: partnerSec,
+        start: 'top 95%',
+        end: 'bottom 95%',
+        animation: partnerTl
+    })
+
+    const partnerLogo = document.querySelectorAll(".partners img");
+     partnerLogo.forEach(logo => {
+        console.log(logo)
+        partnerTl.from(logo,{opacity:0,scale:0},"<")
+     });
 }
 
 
