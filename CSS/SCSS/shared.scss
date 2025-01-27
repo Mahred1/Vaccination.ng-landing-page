@@ -288,8 +288,7 @@ body{
                     height: 10px;
                     width: 10px;
                     border-radius: 50%;
-                    margin-top: 0.3rem;
-                    animation: 270ms ease-in-out dot;  
+                    margin-top: 0.3rem;  
 
                 }
                 a{
@@ -843,14 +842,6 @@ body{
 
 // Animations
 
-@keyframes dot {
-    from{
-        transform: translate3d(0,-1rem,0);
-    }
-    to{
-        transform: translate3d(0,0,0);
-    }
-}
 @keyframes openNav{
     from{
         transform: translate3d(0,-100%,0);

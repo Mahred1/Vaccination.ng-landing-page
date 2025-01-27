@@ -108,13 +108,6 @@ window.addEventListener("resize",()=>{
 
 navItem.forEach(item => {
     item.addEventListener("click",(e)=>{
-       if (!e.target.parentElement.classList.contains("active")) {
-        document.querySelector(".active").classList.remove("active");
-        if(e.target.parentElement.classList.contains("main-nav-item")){
-
-            e.target.parentElement.classList.add("active");
-        }
-       }
        e.stopPropagation(); 
 
        e.preventDefault();
@@ -374,13 +367,19 @@ function scrollNavs(){
             let navs = document.querySelectorAll(".main-nav-item");
 
             navs.forEach(nav=>{
+                console.log(nav)
              let navLoc = nav.getAttribute("location");
-
-             if (secId !== null) {
-                if (secId===navLoc && !nav.classList.contains("active")) {
+            
+             if (secId !== null && secId===navLoc) {
+               
+                 if (!nav.classList.contains("active")) {
                     document.querySelector(".active").classList.remove("active");
                     nav.classList.add("active");
                 }
+               
+                     
+                
+              
              }
             //  for footer nav
 
