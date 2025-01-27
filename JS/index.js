@@ -346,6 +346,7 @@ function animations(){
    partnerAmin();
    checkAnim();
    reasonAnim();
+   regAnim();
 
 }
 
@@ -409,7 +410,6 @@ function partnerAmin(){
 
     const partnerLogo = document.querySelectorAll(".partners img");
      partnerLogo.forEach(logo => {
-        console.log(logo)
         partnerTl.from(logo,{opacity:0,scale:0},"<")
      });
 }
@@ -441,9 +441,7 @@ function reasonAnim(){
         trigger: reasonSec,
         start: 'top 95%',
         end:'bottom 95%',
-        markers:true,
         scrub:true,
-        reverse:false,
         animation:reasonTl
     })
 
@@ -456,4 +454,31 @@ function reasonAnim(){
     
 }
 
+function regAnim(){
+    const regSec = document.querySelector(".registration");
+    const regTl= gsap.timeline();
+
+    ScrollTrigger.create({
+        trigger:regSec,
+        start:'top 85%',
+        end:'bottom 75%',
+        animation: regTl
+
+    })
+
+    const regImg =document.querySelectorAll(".registration-img img");
+
+    regImg.forEach(img => {
+        regTl.from(img,{opacity:0,scale:0,delay:1},"-=1");
+    });
+
+    const regH1 = document.querySelector(".registration-details h1");
+    const regH2 = document.querySelectorAll(".registration-details h2");
+
+    regTl.from(regH1,{opacity:0,yPercent:-50},"<");
+    regH2.forEach(Header => {
+        regTl.from(Header,{opacity:0,yPercent:-50},"-=0.2")
+    });
+
+}
 
