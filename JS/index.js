@@ -113,7 +113,7 @@ navItem.forEach(item => {
        e.preventDefault();
        let targetId = e.target.getAttribute('href');
        let targetElement =document.querySelector(targetId);
-       targetElement.scrollIntoView({ behavior: "smooth",block: "center"});  
+       targetElement.scrollIntoView({ behavior: "smooth",block: "start"});  
     });
 });
 
@@ -360,8 +360,8 @@ function scrollNavs(){
         secTl = gsap.timeline();
         ScrollTrigger.create({
             trigger: section,
-            start: 'top 85%',
-            end: 'bottom bottom',
+            start: 'top 65%',
+            end: 'bottom 85%',
             animation: secTl,
             scrub: true,
             onToggle: self => activateNav()
@@ -436,7 +436,7 @@ function reasonAnim(){
     const reasonHeading = document.querySelectorAll(".vaccine-reasons__heading h1");
     const reasonCards= document.querySelectorAll(".vaccine-cards>div");
 
-    const reasonTl = gsap.timeline({duration:'5000ms'});
+    const reasonTl = gsap.timeline({delay:'5000ms'});
 
     ScrollTrigger.create({
         trigger: reasonSec,
