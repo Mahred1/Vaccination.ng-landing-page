@@ -8,7 +8,7 @@ lenis.on('scroll', (e) => {
 lenis.on('scroll', ScrollTrigger.update)
 
 gsap.ticker.add((time)=>{
-  lenis.raf(time * 3000)
+  lenis.raf(time * 1000)
 })
 
 gsap.ticker.lagSmoothing(0)
@@ -347,6 +347,7 @@ function animations(){
    checkAnim();
    reasonAnim();
    regAnim();
+   symptomAnim();
 
 }
 
@@ -482,3 +483,50 @@ function regAnim(){
 
 }
 
+function symptomAnim(){
+    const symptomSec= document.querySelector(".symptoms");
+
+    const SymptomTl = gsap.timeline();
+    ScrollTrigger.create({
+        trigger: symptomSec,
+        start: 'top 95%',
+        end:'bottom 95%',
+        scrub:true,
+        animation: SymptomTl
+    })
+
+    const symptomH1 = document.querySelector(".symptoms-content h1");
+    const symptomH2  = document.querySelector(".symptoms-content h2");
+    const symptomP  = document.querySelector(".symptoms-content p");
+
+    SymptomTl.from(symptomH2,{opacity:0,yPercent:-40});
+    SymptomTl.from(symptomH1,{opacity:0,yPercent:-40},"-<0.3");
+    SymptomTl.from(symptomP,{opacity:0,yPercent:-40},"-<0.3");
+
+    const symptoms = document.querySelectorAll(".symptom");
+
+    
+    symptoms.forEach(symptom => {
+        let position= symptom.getAttribute("position");
+            if (position==="right") {
+                
+                SymptomTl.from(symptom,{opacity:0,xPercent:100});
+            }
+    });
+
+    let leftTl =gsap.timeline();
+    ScrollTrigger.create({
+        trigger: symptomSec,
+        start: 'top 60%',
+        end:'bottom 95%',
+        scrub:true,
+        animation: leftTl
+    })
+    symptoms.forEach(symptom => {
+        let position= symptom.getAttribute("position");
+        if (position ==="left") {
+                leftTl.from(symptom,{opacity:0,xPercent:-100});
+            }
+    });
+
+}
